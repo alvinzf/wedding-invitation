@@ -16,13 +16,13 @@ class BrideSeeder extends Seeder
     {
         Bride::create([
             'wedding_id'        => 1,
-            'name'              => 'Darren Tan',
+            'name'              => 'Alvin Tan',
             'child'             => 'Putri Pertama dari',
             'name_father'       => 'Bpk Jhone Doe',
             'name_mother'       => 'Ibu Isabela Putri',
             'instagram'         => 'https://www.instagram.com/codelogydev/',
             'bank_id'           => 2,
-            'acc_name'          => 'Darren Tan',
+            'acc_name'          => 'Alvin Tan',
             'acc_number'        => 923123456,
             'gender'            => 'Female',
             'photo'             => 'female.jpg',
