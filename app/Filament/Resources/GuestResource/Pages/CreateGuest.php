@@ -12,7 +12,7 @@ class CreateGuest extends CreateRecord
     protected static string $resource = GuestResource::class;
     protected function getRedirectUrl(): string
     {
-    return $this->getResource()::getUrl('index');
+        return request()->back();
     }
 
     public function create(bool $another = false): void

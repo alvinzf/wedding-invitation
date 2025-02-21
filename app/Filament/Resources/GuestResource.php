@@ -11,10 +11,12 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Actions\Action;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Illuminate\Support\Facades\Log;
+use Carbon\Carbon;
 
 class GuestResource extends Resource
 {
@@ -32,38 +34,39 @@ class GuestResource extends Resource
             Forms\Components\Card::make()
                 ->schema([
 
-                    Forms\Components\TextInput::make('wedding_id')
-                    ->label('Wedding ID')
+                    Forms\Components\TextInput::make('code')
+                    ->label('Code')
                     ->default(1) // Set the default value to the current datetim
+                    ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
                     ->required(), // Ensure it is required
 
                     //name
                     Forms\Components\TextInput::make('name')
                       ->label('Name')
                       ->placeholder('Name')
+                      ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
                       ->required(),
 
                     //quota
                     Forms\Components\TextInput::make('quota')
                       ->label('Quota')
                       ->placeholder('Quota')
+                      ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
                       ->required(),
 
                     Forms\Components\DateTimePicker::make('attendance')
                     ->placeholder('Attendance')
                     // ->native(false)
-                    ->required()
                     ->visible(fn ($operation) => $operation === 'edit'),
 
                     // Forms\Components\TextInput::make('actual_quota')
                     // ->placeholder('Actual Quota')
                     // ->required()
                     // ->visible(fn ($operation) => $operation === 'edit'),
-
                     \LaraZeus\Quantity\Components\Quantity::make('actual_quota')
-                    ->label('Actual Attendance')
-                    ->required()
-                    ->visible(fn ($operation) => $operation === 'edit'),
+                        ->label('Actual Attendance')
+                        ->required()
+                        ->visible(fn ($operation) => $operation === 'edit'),
 
                     // Forms\Components\TextInput::make('souvenir')
                     // ->placeholder('Souvenir')
@@ -72,10 +75,10 @@ class GuestResource extends Resource
 
                     Forms\Components\Textarea::make('note')
                     ->placeholder('Note')
-                    ->required()
                     ->visible(fn ($operation) => $operation === 'edit'),
 
                 ])
+
         ]);
         return $form;
     }
@@ -94,40 +97,38 @@ class GuestResource extends Resource
             'edit' => Pages\EditGuest::route('/{record}/edit'),
         ];
     }
-    protected function mutateFormDataBeforeCreate(array $data): array
-    {
-        // Generate a random alphanumeric string
-        $data['code'] = Str::random(4); // Adjust the length as needed
-        $data['wedding_id'] = 1;
-
-
-        return $data;
-    }
     public static function table(Table $table): Table
     {
-
         return $table
             ->columns([
                 TextColumn::make('code')->searchable(),
                 TextColumn::make('name')->searchable(),
+                TextColumn::make('group')->searchable(),
                 TextColumn::make('quota'),
                 TextColumn::make('attendance'),
                 TextColumn::make('actual_quota'),
-                TextColumn::make('souvenir'),
+                TextColumn::make('note'),
             ])
-            ->filters([])
+            ->filters([
+                Filter::make('attended')
+                    ->query(fn ($query) => $query->whereNotNull('attendance'))
+                    ->label('Attended'),
+                Filter::make('not_attended')
+                    ->query(fn ($query) => $query->whereNull('attendance'))
+                    ->label('Not Attended'),
+            ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-
-                Action::make('Attend')
-                    ->label('Attend')
-                    ->icon('heroicon-o-check')
-                    ->color('success')
-                    ->modalHeading('Guest Detail')
-                    ->modalWidth('2xl')
-                    ->action(fn ($record, Component $livewire) =>
-                    $livewire->dispatch('openAttendModal', ['recordId' => $record->id])
-            ),
+                // Uncomment and modify the following action if needed
+                // Action::make('Attend')
+                //     ->label('Attend')
+                //     ->icon('heroicon-o-check')
+                //     ->color('success')
+                //     ->modalHeading('Guest Detail')
+                //     ->modalWidth('2xl')
+                //     ->action(fn ($record, Component $livewire) =>
+                //     $livewire->dispatch('openAttendModal', ['recordId' => $record->id])
+                // )
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
