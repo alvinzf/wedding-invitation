@@ -75,10 +75,10 @@ foreach ($detail as $item) {
             <div class="column">
 
                 <div class="text-pretitle">
-                    The Wedding
+                    The Wedding of
                 </div>
 
-                
+
                 <h1 class="text-huge-title">
                     {{ $item->name }}
                 </h1>
@@ -170,21 +170,21 @@ foreach ($detail as $item) {
                                 <span>Event</span>
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="#tab-gallery">
                                 <span>Gallery</span>
                             </a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a href="#tab-wishes">
                                 <span>Wishes</span>
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="#tab-gift">
                                 <span>Gift</span>
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </nav> <!-- end tab-nav -->
 
@@ -251,35 +251,61 @@ foreach ($detail as $item) {
                                     <p class="desc-bride">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
                                             <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                                         </svg>
-                                        {{ date_format(date_create($item->date),"d F Y");  }}
-                                        <br>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-                                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-                                        </svg>
-                                        {{ date_format(date_create($item->date),"H:i:s");  }}
-                                        <br>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                        </svg>
-                                        {{ $item->address }}
-                                        <br>
-                                        <br>
-                                        <a href="{{ $item->maps }}" class="btn btn--stroke u-fullwidth" target="_blank">View Maps</a>
-                                        <a href="{{ $item->calendar }}" class="btn btn--stroke u-fullwidth" target="_blank">Add to calendar</a>
+                                        {{ $item->date }}
                                     </p>
                                 </div>
                             </div>
                             @endforeach
+                        </div>
 
-                        </div> <!-- end services-list -->
+                        <div class="row">
+                            <div class="column">
+                                <!-- Card Section -->
+                                <div class="card" id="card">
+                                    <h3>KARTU AKSES MASUK</h3>
+                                    @foreach ($wedding as $item)
+                                        <h1>{{ $item->name }}</h1>
+                                    @endforeach
+                                    @foreach ($detail as $item)
+                                       <p>{{ $item->date }}</p>
+                                    @endforeach
 
-                    </div> <!-- end 02 - tab event -->
+                                    <div class="info">
+                                        @foreach ($wedding as $item)
+                                            <p><strong>Nama:</strong> {{ $item->to }}</p>
+                                        @endforeach
+                                        <p><strong>Keterangan:</strong></p>
+                                        <ul>
+                                            <li>Keluarga</li>
+                                            <li>Jumlah tamu: 4 Orang</li>
+                                        </ul>
+                                    </div>
 
-                    <!-- 03 - tab gallery -->
+                                    <div class="important">
+                                        <p><strong>Penting</strong></p>
+                                        <p>Silakan tunjukkan QRCode disamping kepada penerima tamu yang bertugas saat acara berlangsung.</p>
+                                    </div>
+
+                                    <div class="qr-section">
+                                        <div id="qrcode"></div>
+                                    </div>
+
+                                    <div class="ss-copyright">
+                                        @foreach ($wedding as $item)
+                                        <span>© Copyright {{ $item->name }} {{date("Y")}}</span>
+                                        @endforeach
+                                        <span>Developed by <a href="https://wa.me/6285784297132" target="_blank">alvinzf</a></span>
+                                    </div>
+                                </div>
+                                <button id="download-btn">Download as Image</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end 02 - tab event -->
+
+                    {{-- <!-- 03 - tab gallery -->
                     @foreach ($galery as $item)
                     <div id="tab-gallery" class="tab-content__item">
                         <div class="tz-gallery">
@@ -324,7 +350,7 @@ foreach ($detail as $item) {
                         </div>
                     </div>
                     @endforeach
-                    <!-- end 03 - tab gallery -->
+                    <!-- end 03 - tab gallery --> --}}
 
                     <!-- 04 - tab wishes -->
                     <div id="tab-wishes" class="tab-content__item">
@@ -349,7 +375,7 @@ foreach ($detail as $item) {
                     </div> <!-- end 04 - tab wishes -->
 
                     <!-- 05 - tab gift -->
-                    <div id="tab-gift" class="tab-content__item">
+                    {{-- <div id="tab-gift" class="tab-content__item">
                         <p>Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk mempelai dapat melalui: </p>
 
                         <div class="row">
@@ -391,7 +417,7 @@ foreach ($detail as $item) {
                             </div>
                         </div>
 
-                    </div> <!-- end 05 - tab gift -->
+                    </div> <!-- end 05 - tab gift --> --}}
 
                 </div> <!-- end tab content -->
 
@@ -401,7 +427,7 @@ foreach ($detail as $item) {
                         @foreach ($wedding as $item)
                         <span>© Copyright {{ $item->name }} {{date("Y")}}</span>
                         @endforeach
-                        <span>Developed by <a href="https://wa.me/6287823327307" target="_blank">danixsofyan</a></span>
+                        <span>Developed by <a href="https://wa.me/6285784297132" target="_blank">alvinzf</a></span>
                     </div>
                 </footer>
 
@@ -421,9 +447,37 @@ foreach ($detail as $item) {
 
 
     <!-- Java Script
+
     ================================================== -->
     <script src="assets/undangan/js/plugins.js"></script>
     <script src="assets/undangan/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const qrCode = new QRCode(document.getElementById("qrcode"), {
+                text: "ABCD", // Replace with your desired URL or data
+                width: 128, // Width of the QR code
+                height: 128, // Height of the QR code
+                colorDark: "#000000", // Dark color
+                colorLight: "#ffffff", // Light color
+                correctLevel: QRCode.CorrectLevel.H // Error correction level
+            });
+        });
+    </script>
+
+    <script>
+            document.getElementById('download-btn').addEventListener('click', () => {
+            const card = document.getElementById('card');
+
+            html2canvas(card).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'kartu-akses-masuk.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            });
+        });
+    </script>
     <Script>
         (function(html) {
 

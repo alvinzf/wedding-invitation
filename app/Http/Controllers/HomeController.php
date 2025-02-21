@@ -9,6 +9,7 @@ use App\Models\Wedding;
 use App\Models\Gift;
 use App\Models\Thank;
 use App\Models\Wishes;
+use App\Models\Guest;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,6 +22,11 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         $to         = $request->to;
+        $guest       = Guest::where('code', $request->to)->first();
+        if(!$guest){
+            abort(404);
+        }
+        $to = $guest->name;
         $wedding    = Wedding::all();
         $bride      = Bride::all();
         $detail     = Detail::all();
