@@ -26,62 +26,46 @@ class GuestResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
 
     public static function form(Form $form): Form
-    {
-        $form
-        ->schema([
+{
+    return $form->schema([
+        Forms\Components\Card::make()->schema([
+            Forms\Components\TextInput::make('code')
+                ->label('Code')
+                ->default(1)
+                ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
+                ->required()
+                ->suffixIcon('heroicon-o-camera') // Add a camera icon
+                ->extraAttributes(['id' => 'scanQR']), // Set an ID for JavaScript
 
-            //card
-            Forms\Components\Card::make()
-                ->schema([
+            Forms\Components\TextInput::make('name')
+                ->label('Name')
+                ->placeholder('Name')
+                ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
+                ->required(),
 
-                    Forms\Components\TextInput::make('code')
-                    ->label('Code')
-                    ->default(1) // Set the default value to the current datetim
-                    ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
-                    ->required(), // Ensure it is required
+            Forms\Components\TextInput::make('quota')
+                ->label('Quota')
+                ->placeholder('Quota')
+                ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
+                ->required(),
 
-                    //name
-                    Forms\Components\TextInput::make('name')
-                      ->label('Name')
-                      ->placeholder('Name')
-                      ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
-                      ->required(),
+            Forms\Components\DateTimePicker::make('attendance')
+                ->placeholder('Attendance')
+                ->visible(fn ($operation) => $operation === 'edit'),
 
-                    //quota
-                    Forms\Components\TextInput::make('quota')
-                      ->label('Quota')
-                      ->placeholder('Quota')
-                      ->extraInputAttributes(fn ($operation) => $operation === 'edit' ? ['readonly' => true] : [])
-                      ->required(),
+            \LaraZeus\Quantity\Components\Quantity::make('actual_quota')
+                ->label('Actual Attendance')
+                ->required()
+                ->visible(fn ($operation) => $operation === 'edit'),
 
-                    Forms\Components\DateTimePicker::make('attendance')
-                    ->placeholder('Attendance')
-                    // ->native(false)
-                    ->visible(fn ($operation) => $operation === 'edit'),
+            Forms\Components\Textarea::make('note')
+                ->placeholder('Note')
+                ->visible(fn ($operation) => $operation === 'edit'),
+        ]),
+        Forms\Components\View::make('qr-scan-page'), // Inject QR scanner only here
+    ]);
+}
 
-                    // Forms\Components\TextInput::make('actual_quota')
-                    // ->placeholder('Actual Quota')
-                    // ->required()
-                    // ->visible(fn ($operation) => $operation === 'edit'),
-                    \LaraZeus\Quantity\Components\Quantity::make('actual_quota')
-                        ->label('Actual Attendance')
-                        ->required()
-                        ->visible(fn ($operation) => $operation === 'edit'),
-
-                    // Forms\Components\TextInput::make('souvenir')
-                    // ->placeholder('Souvenir')
-                    // ->required()
-                    // ->visible(fn ($operation) => $operation === 'edit'),
-
-                    Forms\Components\Textarea::make('note')
-                    ->placeholder('Note')
-                    ->visible(fn ($operation) => $operation === 'edit'),
-
-                ])
-
-        ]);
-        return $form;
-    }
     public static function getRelations(): array
     {
         return [
