@@ -9,19 +9,30 @@
     <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        body {
+        /* body {
             padding: 20px;
-        }
+        } */
         .table {
             margin-top: 20px;
         }
         .attendance-btn {
             cursor: pointer;
         }
+        .navbar-custom {
+            background-color: #ffcccb; /* Pinkish color */
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Navbar -->
+<!-- As a heading -->
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Wedding of Thara & Alvin</span>
+        </div>
+    </nav>
+
+    <div class="container mt-2">
         <h1>Guest Attendance</h1>
         <div class="row">
             <div class="mb-3 col-md-3">
@@ -41,13 +52,12 @@
         <table class="table table-bordered" id="guest-table">
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Code</th>
                     <th>Name</th>
                     <th>Group</th>
                     <th>Quota</th>
                     <th>Attendance</th>
-                    <th>Actual Quota</th>
+                    <th>Actual</th>
                     <th>Note</th>
                     <th>Action</th>
                 </tr>
@@ -89,7 +99,7 @@
                             <input type="datetime-local" class="form-control" id="attendance">
                         </div>
                         <div class="mb-3">
-                            <label for="actual_quota" class="form-label">Actual Quota</label>
+                            <label for="actual_quota" class="form-label">Actual </label>
                             <div class="input-group">
                                 <button class="btn btn-outline-secondary" type="button" id="decrease-quota">
                                     <i class="fas fa-minus"></i>
@@ -186,7 +196,7 @@
                     $('#group').val(response.group);
                     $('#quota').val(response.quota);
                     $('#attendance').val(response.attendance ? toGMT7(response.attendance) : getCurrentTimeGMT7());
-                    $('#actual_quota').val(response.actual_quota);
+                    $('#actual_quota').val(response.actual_quota ?? response.quota);
                     $('#note').val(response.note);
                     $('#detailModal').modal('show');
                 }
@@ -206,6 +216,7 @@
         }
         function submitAttendance() {
             var formData = {
+                _token: '{{ csrf_token() }}',
                 id: $('#code').val(),
                 attendance: $('#attendance').val(),
                 actual_quota: $('#actual_quota').val(),

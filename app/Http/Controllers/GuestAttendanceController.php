@@ -33,7 +33,6 @@ class GuestAttendanceController extends Controller
          $html = '';
          foreach ($guests as $guest) {
              $html .= '<tr>';
-             $html .= '<td>' . $guest->id . '</td>';
              $html .= '<td>' . $guest->code . '</td>';
              $html .= '<td>' . $guest->name . '</td>';
              $html .= '<td>' . $guest->group . '</td>';
