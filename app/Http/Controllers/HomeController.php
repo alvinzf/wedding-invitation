@@ -37,7 +37,8 @@ class HomeController extends Controller
         $wish       = Wishes::orderby('id', 'desc')->get();
         $bank       = Bride::select('brides.name', 'brides.acc_name', 'brides.acc_number', 'brides.bank_id', 'banks.name as bank_name', 'banks.logo')->join('banks', 'banks.id', 'brides.bank_id')->get();
 
-        return view('home', [
+        // return view('home', [
+        return view('index', [
             'bride' => $bride,
             'detail' => $detail,
             'wedding' => $wedding,
