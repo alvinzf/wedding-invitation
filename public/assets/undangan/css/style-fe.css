@@ -22,7 +22,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
-    background-image: url('../images/bg-header.webp');
+    background-image: url('../images/background.webp');
     background-size: contain;
     background-repeat: repeat-y;
     background-position: center top;

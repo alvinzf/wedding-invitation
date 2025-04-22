@@ -4,10 +4,18 @@
     <!-- Header Section -->
     <section class="header-section" id="header">
         <div class="container">
-            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; top: 50px; left: 10%;transform: scale(5);">
-            <img src="assets/undangan/images/birds.webp" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; top: 80px; right: 15%;transform: scale(5)">
-            <img src="assets/undangan/images/birds.webp" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; bottom: 50px; left: 20%;transform: scale(5)">
-
+            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1 img-fluid" style="position: absolute; top: 50px; left: 10%; max-width: 100%; height: auto; transform: scale(5);">
+            {{-- <img src="assets/undangan/images/birds.webp" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; top: 80px; right: 15%;transform: scale(5)"> --}}
+            {{-- <img src="assets/undangan/images/birds.webp" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; bottom: 50px; left: 20%;transform: scale(5)"> --}}
+            <div class="card-container">
+                <div class="text-card">
+                  <h1>Vidi & Hening</h1>
+                  <p>Our Wedding Day</p>
+                </div>
+                <div class="image-card">
+                    <img src="{{ asset('assets/undangan/images/7.jpg') }}" alt="Couple"  >
+                </div>
+              </div>
             <div class="text-center mb-4">
                 <p class="mb-3">We invite you to The Wedding of</p>
                 <h1 class="couple-names">Thara & Alvin</h1>
@@ -26,9 +34,9 @@
     <!-- Couple Section -->
     <section class="couple-section section" id="couple">
         <div class="container">
-            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; top: 50px; left: 10%;transform: scale(5)">
-            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; bottom: 70px; right: 10%;transform: scale(5)">
-            <img src="{{ asset('assets/undangan/images/birds.webp') }}" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; top: 100px; right: 15%;transform: scale(5)">
+            {{-- <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; top: 50px; left: 10%;transform: scale(5)"> --}}
+            {{-- <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; bottom: 70px; right: 10%;transform: scale(5)"> --}}
+            {{-- <img src="{{ asset('assets/undangan/images/birds.webp') }}" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; top: 100px; right: 15%;transform: scale(5)"> --}}
 
             <h2 class="section-title">Bride & Groom</h2>
 
@@ -72,10 +80,6 @@
     <!-- Countdown Section -->
     <section class="countdown-section section" id="countdown">
         <div class="container">
-            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; top: 30px; left: 5%;transform: scale(5)">
-            <img src="assets/undangan/images/birds.webp" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; bottom: 20px; right: 10%;transform: scale(5)">
-            <img src="assets/undangan/images/birds.webp" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; top: 50px; right: 20%;transform: scale(5)">
-
             <div class="countdown-container">
                 <div class="countdown-item">
                     <span class="countdown-number" id="days">0</span>
@@ -107,10 +111,6 @@
     <section class="story-section section" id="story">
         <div class="container">
             <img src="https://ext.same-assets.com/3039271263/251837068.webp" alt="Background" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: -2; opacity: 0.3;">
-            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; top: 50px; left: 10%;transform: scale(5)">
-            <img src="assets/undangan/images/birds.webp" alt="Decorative Bird" class="decorative-element bird-1" style="position: absolute; bottom: 80px; right: 15%;transform: scale(5)">
-            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="Decorative Branch" class="decorative-element branch-1" style="position: absolute; top: 100px; right: 10%;transform: scale(5)">
-
             <h2 class="section-title">Our Story</h2>
 
             <div class="story-content">

@@ -17,7 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="{{ asset('assets/undangan/css/style-fe.css') }}" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     @stack('styles')
 </head>
 <body>

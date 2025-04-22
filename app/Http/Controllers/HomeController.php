@@ -38,7 +38,8 @@ class HomeController extends Controller
         $bank       = Bride::select('brides.name', 'brides.acc_name', 'brides.acc_number', 'brides.bank_id', 'banks.name as bank_name', 'banks.logo')->join('banks', 'banks.id', 'brides.bank_id')->get();
 
         // return view('home', [
-        return view('index', [
+        // return view('index', [
+        return view('invitation', [
             'bride' => $bride,
             'detail' => $detail,
             'wedding' => $wedding,

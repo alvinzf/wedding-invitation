@@ -1,0 +1,25 @@
+<div class="wishes " data-anim="zoom-in-up" id="wishes-container"
+    
+        >
+    
+            <div class="wish">
+            <div class="wish-badge">
+                <h6>V</h6>
+            </div>
+            <div class="wish-description">
+                <h6 style="font-size:1.17rem;">Viding</h6>
+                <p>
+                    Happy Wedding
+                </p>
+              
+                                <small
+                    class="text-muted">1 year ago
+                    at 13:27</small>
+                    
+            </div>
+        </div>
+    </div>
+
+
+
+
