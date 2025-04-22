@@ -51,8 +51,8 @@
     <!-- gift registry css -->
     <link rel="stylesheet" href="https://themes.viding.co/assets/css/gift_registry.css?v=657207515c1330cf2fbecf68a819b37584123712">
 
-    <!-- Color Picker -->
-            <link rel="stylesheet" href="https://themes.viding.co/assets/css/colorpicker.css?v=626ee5683d66689d803a639ca48f70f27b9c9fc8">
+    <!-- Remove Color Picker CSS -->
+    <!-- <link rel="stylesheet" href="https://themes.viding.co/assets/css/colorpicker.css?v=626ee5683d66689d803a639ca48f70f27b9c9fc8"> -->
 
 
         </head>
@@ -85,180 +85,10 @@
                 </button>
             </div>
 {{-- remove this later --}}
-                    <div class="colorpicker__wrapper" style="display: none;">
-    <button type="button" class="colorpicker__button">
-        <svg class="colorpicker__icon" width="44" height="44" viewBox="0 0 44 44" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3022_561)">
-                <path
-                    d="M25.9717 17.266C30.192 17.0009 31.9596 18.8724 33.2408 20.7174C34.3739 22.3486 34.6284 24.4427 34.2501 26.3991C33.9991 27.6962 33.5354 29.6932 32.9462 30.826C30.4377 35.6436 25.1524 37.9639 19.2394 37.0786C13.4782 36.2179 8.85172 31.4092 8.12306 25.5526C7.60707 21.4155 8.95108 17.5876 11.4247 14.8113C11.4247 14.8113 13.269 12.7719 16.0808 12.8602C19.5654 12.9715 20.8467 15.9547 20.8467 16.8931"
-                    fill="#FFE7E5" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M27.2058 17.1971C31.242 16.9439 32.9338 18.7292 34.1607 20.4924C35.2327 22.0375 35.4569 24.0243 35.0978 25.8781C34.8498 27.1626 34.4178 28.3861 33.8326 29.5098C31.3478 34.2818 26.0846 37.3369 20.229 36.4609H20.2272C14.521 35.607 9.94333 30.8423 9.2214 25.0408C8.70913 20.9378 10.0418 17.1398 12.4938 14.386C12.4974 14.3823 12.5011 14.3786 12.5047 14.3749C12.5047 14.3749 14.3898 12.1478 16.9967 12.231C18.4734 12.2772 19.2773 13.1403 19.7149 14.081C20.1998 15.1215 20.2746 16.2582 20.2746 16.6962C20.2746 17.101 20.6027 17.4299 21.0074 17.4299C21.4121 17.4299 21.7403 17.101 21.7403 16.6962C21.7403 16.1528 21.6437 14.7482 21.0457 13.4637C20.4022 12.0794 19.2117 10.8337 17.0441 10.7635C13.7699 10.6618 11.389 13.4212 11.389 13.4212C8.67813 16.4633 7.19964 20.6717 7.76661 25.2219C8.56875 31.6722 13.6678 36.9636 20.012 37.9098C26.5222 38.8857 32.3723 35.4905 35.1342 30.1862C35.7814 28.9405 36.2609 27.5839 36.538 26.1553C36.9701 23.9171 36.662 21.5237 35.3639 19.657C33.9092 17.5612 31.9056 15.432 27.1146 15.7333C26.7099 15.7592 26.4037 16.1066 26.4292 16.5114C26.4529 16.9143 26.8029 17.2229 27.2058 17.1971Z"
-                    fill="#EC87BC" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M21.8544 32.0214C21.8544 30.6152 20.7229 29.4785 19.3354 29.4785C17.9476 29.4785 16.8164 30.6152 16.8164 32.0214C16.8164 33.4272 17.9476 34.5638 19.3354 34.5638C20.7229 34.5638 21.8544 33.4272 21.8544 32.0214Z"
-                    fill="#FC80BE" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M29.3739 30.6352C29.3739 29.2294 28.2424 28.0928 26.8549 28.0928C25.4675 28.0928 24.3359 29.2294 24.3359 30.6352C24.3359 32.0414 25.4675 33.1781 26.8549 33.1781C28.2424 33.1781 29.3739 32.0414 29.3739 30.6352Z"
-                    fill="#F6399D" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M33.8759 24.8602C33.8759 23.4541 32.7444 22.3174 31.3569 22.3174C29.9691 22.3174 28.8379 23.4541 28.8379 24.8602C28.8379 26.266 29.9691 27.4027 31.3569 27.4027C32.7444 27.4027 33.8759 26.266 33.8759 24.8602Z"
-                    fill="#EC87BC" />
-                <path d="M26.125 22.7344C26.125 22.7344 25.1542 25.3379 22.6451 25.5582Z" fill="#FFE7E5" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M25.4388 22.4771C25.4388 22.4771 24.653 24.6464 22.5801 24.8277C22.1781 24.8627 21.8798 25.2184 21.9146 25.6233C21.9497 26.0257 22.3063 26.3235 22.7094 26.2899C25.6561 26.0293 26.8133 22.9905 26.8133 22.9905C26.9533 22.6118 26.761 22.1878 26.382 22.0479C26.0033 21.9055 25.58 22.0998 25.4388 22.4771Z"
-                    fill="#EC87BC" />
-                <path
-                    d="M16.7957 20.4844C18.5458 20.4844 19.9623 21.9223 19.9623 23.6947C19.9623 25.4671 18.5458 26.905 16.7957 26.905H13.6309V23.6947C13.6309 21.9223 15.0474 20.4844 16.7957 20.4844Z"
-                    fill="#FFE7E5" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M16.7961 19.751C14.6449 19.751 12.8984 21.5142 12.8984 23.695V26.9054C12.8984 27.3101 13.2266 27.6391 13.6313 27.6391H16.7961C18.9491 27.6391 20.6956 25.8759 20.6956 23.695C20.6956 21.5142 18.9491 19.751 16.7961 19.751ZM16.7961 21.2184C18.1434 21.2184 19.2299 22.3311 19.2299 23.695C19.2299 25.059 18.1434 26.1716 16.7961 26.1716H14.3642V23.695C14.3642 22.3311 15.4507 21.2184 16.7961 21.2184Z"
-                    fill="#EC87BC" />
-                <path
-                    d="M19.1685 21.7054L18.6033 21.1325C18.3226 20.8497 18.3718 20.3119 18.7218 19.8554L21.7043 15.9557C23.4034 13.7323 25.3997 11.7104 27.591 9.986L31.4431 6.95865C31.8916 6.60565 32.4239 6.55575 32.7046 6.84037L33.2661 7.41146C33.5487 7.69424 33.4977 8.23206 33.1495 8.68857L30.1578 12.5994C28.4587 14.8209 26.4625 16.8428 24.2712 18.5672L20.4264 21.5872C19.9779 21.9383 19.4474 21.9901 19.1685 21.7054Z"
-                    fill="#FFE7E5" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M18.645 22.2196C19.1373 22.7223 20.0852 22.7851 20.8783 22.1642L24.7249 19.1442C26.9636 17.381 29.0036 15.3147 30.741 13.0451L33.7326 9.13434C34.3397 8.33777 34.2795 7.39149 33.7891 6.89802L33.2258 6.32508C32.7299 5.82237 31.7819 5.75953 30.9889 6.38237L27.1368 9.40972C24.8981 11.1729 22.8581 13.2392 21.1207 15.5106L18.1382 19.4103C17.5275 20.2069 17.5913 21.155 18.0835 21.6504C18.0817 21.6485 18.6469 22.2214 18.6469 22.2214L18.645 22.2196ZM32.2213 7.39519L32.7099 7.89235C32.6971 7.94595 32.6479 8.13631 32.5658 8.24351L29.5742 12.1543C27.9134 14.3278 25.9609 16.3054 23.817 17.9909L19.974 21.0109C19.8756 21.0867 19.706 21.1366 19.6514 21.1513L19.1591 20.6523C19.1719 20.5987 19.2211 20.4084 19.3032 20.3012L22.2875 16.4015C23.9483 14.2261 25.9008 12.2486 28.0447 10.563L31.8968 7.53565C31.9952 7.45803 32.1666 7.40997 32.2213 7.39519Z"
-                    fill="#EC87BC" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M21.9086 16.0538L24.0455 18.2184C24.3292 18.5058 24.7946 18.5095 25.0819 18.2258C25.3706 17.9407 25.3729 17.4755 25.0892 17.1881L22.9523 15.0235C22.6686 14.7361 22.2032 14.7324 21.9146 15.0174C21.6272 15.3012 21.6248 15.7664 21.9086 16.0538Z"
-                    fill="#EC87BC" />
-            </g>
-            <defs>
-                <clipPath id="clip0_3022_561">
-                    <rect width="44" height="44" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
-        Color Variation
-        <svg class="colorpicker__arrow__icon" width="16" height="10" viewBox="0 0 16 10" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M15.1589 0.954385C14.9479 0.74348 14.6618 0.625 14.3635 0.625C14.0652 0.625 13.7791 0.74348 13.5681 0.954385L7.9994 6.52314L2.43065 0.954385C2.21847 0.749457 1.93429 0.636062 1.63932 0.638626C1.34435 0.641189 1.06219 0.759504 0.853604 0.968088C0.64502 1.17667 0.526707 1.45884 0.524143 1.75381C0.52158 2.04878 0.634973 2.33296 0.839901 2.54513L7.20402 8.90926C7.41499 9.12017 7.70109 9.23865 7.9994 9.23865C8.29771 9.23865 8.5838 9.12017 8.79477 8.90926L15.1589 2.54514C15.3698 2.33417 15.4883 2.04807 15.4883 1.74976C15.4883 1.45145 15.3698 1.16535 15.1589 0.954385Z"
-                fill="#DA0F7A" />
-        </svg>
-        <svg class="close-icon-sm" width="8" height="9" viewBox="0 0 8 9" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 1.2L7.3 0.5L4 3.8L0.7 0.5L0 1.2L3.3 4.5L0 7.8L0.7 8.5L4 5.2L7.3 8.5L8 7.8L4.7 4.5L8 1.2Z"
-                fill="#E9088A" />
-        </svg>
-    </button>
-    <div class="colorpicker__content">
-        <div class="colorpicker__content__title">
-            <span>Theme Color</span>
-            <svg class="close-icon" width="8" height="9" viewBox="0 0 8 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M8 1.2L7.3 0.5L4 3.8L0.7 0.5L0 1.2L3.3 4.5L0 7.8L0.7 8.5L4 5.2L7.3 8.5L8 7.8L4.7 4.5L8 1.2Z"
-                    fill="#E9088A" />
-            </svg>
-        </div>
-        <ul class="colorpicker__content__menu">
-            <li class="colorpicker__menu__list menu__main">
-                <div class="colorpicker__toggle__button" data-color="main" data-target="#color_main">
-                    Primary Color
-                    <div class="colorpicker__toggle colorpicker__color__main"></div>
-                </div>
-                <div class="colorpicker__choose__color" id="color_main">
-                    <div class="colorpicker__content__title">
-                        <span>Primary Color</span>
-                    </div>
-                    <div id="colormain"></div>
-                    <div class="colorpicker__data__wrapper">
-                        <input type="text" data-target="main" id="code-color" class="data__input"
-                            onchange="cp.handleInputCode(this.value,this.dataset.target)">
-                        <input type="text" onchange="cp.handleInputAlpha(this.value,this.dataset.target)" id="alpha"
-                            data-target="main" class="data__input">
-                    </div>
-                    <div class="colorpicker__color__recent">
-                        <div class="colorpicker__color__recent__title">
-                            <h6>Recent Selected</h6>
-                        </div>
-                        <div class="colorpicker__color__recent__content"></div>
-                    </div>
-                    <div class="colorpicker__content__action">
-                        <button class="colorpicker__button__action colorpicker__button__action__save"
-                            onclick="cp.apply(this.dataset.target)" data-target="#color_main">
-                            Apply
-                        </button>
-                    </div>
-                </div>
-            </li>
-            <li class="colorpicker__menu__list menu__primary">
-                <div class="colorpicker__toggle__button" data-target="#color_primary" data-color="primary">
-                    Secondary Color
-                    <div class="colorpicker__toggle colorpicker__color__primary">
-                    </div>
-                </div>
-                <div class="colorpicker__choose__color" id="color_primary">
-                    <div class="colorpicker__content__title">
-                        <span>Secondary Color</span>
-                    </div>
-                    <div id="colorprimary"></div>
-                    <div class="colorpicker__data__wrapper">
-                        <input type="text" data-target="primary" id="code-color" class="data__input"
-                            onchange="cp.handleInputCode(this.value,this.dataset.target)">
-                        <input type="text" onchange="cp.handleInputAlpha(this.value,this.dataset.target)" id="alpha"
-                            data-target="primary" class="data__input">
-                    </div>
-                    <div class="colorpicker__color__recent">
-                        <div class="colorpicker__color__recent__title">
-                            <h6>Recent Selected</h6>
-                        </div>
-                        <div class="colorpicker__color__recent__content"></div>
-                    </div>
-                    <div class="colorpicker__content__action">
-                        <button class="colorpicker__button__action colorpicker__button__action__save"
-                            onclick="cp.apply(this.dataset.target)" data-target="#color_primary">
-                            Apply
-                        </button>
-                    </div>
-                </div>
-            </li>
-            <li class="colorpicker__menu__list menu__secondary">
-                <div class="colorpicker__toggle__button" data-color="secondary" data-target="#color_secondary">
-                    Button Color
-                    <div class="colorpicker__toggle colorpicker__color__secondary">
-                    </div>
-                </div>
-                <div class="colorpicker__choose__color" id="color_secondary">
-                    <div class="colorpicker__content__title">
-                        <span>Button Color</span>
-                    </div>
-                    <div id="colorsecondary"></div>
-                    <div class="colorpicker__data__wrapper">
-                        <input type="text" data-target="secondary" id="code-color" class="data__input"
-                            onchange="cp.handleInputCode(this.value,this.dataset.target)">
-                        <input type="text" onchange="cp.handleInputAlpha(this.value,this.dataset.target)" id="alpha"
-                            data-target="secondary" class="data__input">
-                    </div>
-                    <div class="colorpicker__color__recent">
-                        <div class="colorpicker__color__recent__title">
-                            <h6>Recent Selected</h6>
-                        </div>
-                        <div class="colorpicker__color__recent__content"></div>
-                    </div>
-                    <div class="colorpicker__content__action">
-                        <button class="colorpicker__button__action colorpicker__button__action__save"
-                            onclick="cp.apply(this.dataset.target)" data-target="#color_secondary">
-                            Apply
-                        </button>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="colorpicker__content__action">
-            <button type="button" disabled class="colorpicker__reset" onclick="cp.reset()">
-                Reset
-            </button>
-            <button class="colorpicker__button__action colorpicker__button__action__save action__loader" onclick="cp.save()"
-                data-target="#color_secondary">
-                Save Color
-            </button>
-        </div>
-    </div>
-</div>
+                    <!-- Remove Color Picker Wrapper -->
+        <!-- <div class="colorpicker__wrapper" style="display: none;"> -->
+        <!-- ...existing code... -->
+        <!-- </div> -->
         <!-- Envelope Section -->
         <section class="cover-section">
             <div class="elements-wrapper-absolute">
@@ -1341,15 +1171,15 @@ var invitation_lang = "en"
         }
 
         /** Color Picker **/
-        const defaultColors = {
-            main: "#f2edea",
-            primary: "rgba(255, 255, 255, 0.8)",
-            secondary: "#6a8369",
-        }
+        // Remove Color Picker Initialization
+        // const defaultColors = {
+        //     main: "#f2edea",
+        //     primary: "rgba(255, 255, 255, 0.8)",
+        //     secondary: "#6a8369",
+        // };
+        // const cp = colorpicker(document.querySelector('.colorpicker__wrapper'), defaultColors, '');
 
-        const cp = colorpicker(document.querySelector('.colorpicker__wrapper'), defaultColors, '');
-
-                /** End of Color Picker **/
+        /** End of Color Picker **/
     </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
