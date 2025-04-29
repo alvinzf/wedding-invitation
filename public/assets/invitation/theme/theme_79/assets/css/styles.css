@@ -3500,3 +3500,37 @@ body {
   border: 1px solid transparent;
   margin: -1px;
 }
+/* custom for qr */
+.card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.card h3,
+.card h1 {
+    margin: 10px 0;
+}
+
+.card .info,
+.card .important {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.card .qr-section img {
+    margin: 10px auto;
+    max-width: 100px;
+}
+
+.card .footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #666;
+}

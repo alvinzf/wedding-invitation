@@ -402,7 +402,7 @@ ul li {
 }
 
 .loader-wrapper span {
-  color: var(--vd-color-pink);
+color: green;
   font-weight: 700;
   -webkit-animation: fade 2s linear infinite;
   animation: fade 2s linear infinite;

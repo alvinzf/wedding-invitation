@@ -9,6 +9,16 @@ class GuestAttendanceController extends Controller
     public function index(Request $request){
         return view('guest-attendance');
     }
+    public function guestConfirmation(Request $request){
+        $guest = Guest::where('code', $request->input('code'))->first();
+        if ($guest) {
+            $guest->rsvp = true;
+            $guest->save();
+            return response()->json(['status' => true, 'guest' => $guest]);
+        } else {
+            return response()->json(['status' => false]);
+        }
+    }
      // Fetch table data
      public function table(Request $request)
      {

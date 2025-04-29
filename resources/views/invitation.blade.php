@@ -5,34 +5,12 @@
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords"
-    content="Virtual Wedding, Digital Invitation, Wedding Invitation, Marvelous Wedding, Unforgettable Wedding, Viding.co">
-    <meta name="robots" content="noindex">
-<meta name="csrf-token" content="ykWrss7g6MfAwLFhLxECTOrfte5UoHppvT22fjxc">
-<meta name="format-detection" content="telephone=no">
-
 <meta name="title" content="Thara & Alvin - 27 September 2025">
-<meta name="description" content="Thara & Alvin Digital Invitation by Viding.co">
+<meta name="description" content="Thara & Alvin - 27 September 2025">
 
-<meta name="google" content="notranslate">
 
-<link rel="preconnect" href="https://media.viding.co">
-
-<script>
-    const APP_URL = "https://viding.co";
-</script>
-
-<script type="application/ld+json">
-    	{
-    		"@context": "https://schema.org",
-    		"@type": "WebPage",
-    		"headline": "Welcome to the Wedding of Wanita & Pria - 05 May 2025",
-    		"url": "https://viding.co/theme/preview/79",
-    		"image": "https://media.viding.co/dmlkaW5nIGNvIGltYWdlIHByb3h5IGJ5IGZseS5pbw/rs:auto:0:0:1/g:no/.jpeg",
-    		"thumbnailUrl": "https://media.viding.co/dmlkaW5nIGNvIGltYWdlIHByb3h5IGJ5IGZseS5pbw/rs:auto:650:366:1/g:no/.jpeg"
-    	}
-</script>
-    <link rel="stylesheet" href="https://themes.viding.co/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db">    <!-- Preconnect -->
+    {{-- <link rel="stylesheet" href="https://themes.viding.co/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db">    <!-- Preconnect --> --}}
+    <link rel="stylesheet" href="{{ asset('assets/invitation/theme/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db')}}">    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -42,17 +20,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- styles libraries -->
-    <link rel="stylesheet" href="https://themes.viding.co/theme_40/assets/css/vendor.css?v=4224221d5224d8d4ea99f99574a5bb453ef2a2d8">
+    <link rel="stylesheet" href="{{ asset('assets/invitation/theme/theme_40/assets/css/vendor.css?v=4224221d5224d8d4ea99f99574a5bb453ef2a2d8')}}">
 
-    <!-- styles custom -->
-    <link rel="stylesheet" href="https://themes.viding.co/theme_79/assets/css/styles.css?v=9ad0c73438b45a8f4a4c849946fd33306a8b92ce">
+    <link rel="stylesheet" href="{{ asset('assets/invitation/theme/theme_79/assets/css/styles.css?v=9ad0c73438b45a8f4a4c849946fd33306a8b92ce')}}">
 
-    <!-- gift registry css -->
-    <link rel="stylesheet" href="https://themes.viding.co/assets/css/gift_registry.css?v=657207515c1330cf2fbecf68a819b37584123712">
-
-    <!-- Remove Color Picker CSS -->
-    <!-- <link rel="stylesheet" href="https://themes.viding.co/assets/css/colorpicker.css?v=626ee5683d66689d803a639ca48f70f27b9c9fc8"> -->
+    <link rel="stylesheet" href="{{ asset('assets/invitation/theme/assets/css/gift_registry.css?v=657207515c1330cf2fbecf68a819b37584123712')}}">
 
 
         </head>
@@ -62,7 +34,7 @@
     <div class="main-app">
         <!-- Loader -->
         <div class="loader-wrapper">
-            <img src="https://themes.viding.co/theme_79/assets/images/spinner.gif" alt="loading" class="spinner">
+            <img src="{{ asset('assets/undangan/images/loading.gif')}}" alt="loading" class="spinner">
             <span>Loading</span>
         </div>
         <script>
@@ -142,7 +114,8 @@
                                         <div class="header">
                                             <div class="header-title" data-anim="fade-down" data-anim-delay="1500">
                                                                                                     <h1 class="title mb-3 main_style notranslate">Thara & <br> Alvin</h1>
-                                                                                                <div><p><span style="font-size: 14pt;">Hari Pernikahan Kami</span></p></div>
+                                                                                                <div><p><span style="font-size: 12pt;">Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir </span></p></div>
+                                                                                                <div><p><span style="font-size: 12pt;"><strong> QS. Ar-Rum: 21 </strong></span></p></div>
                                             </div>
                                             <div class="scroll-icon">
                                                 <svg data-anim="slide-down" width="28" height="42" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +128,7 @@
                                     <div class="col-md-7 col-12 position-relative">
                                         <div class="orn-1">
                                             <div data-anim="slide-left" data-anim-delay="2000">
-                                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="1000">
+                                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="1000">
                                             </div>
                                         </div>
                                         <div class="image-wrapper shadow">
@@ -184,14 +157,14 @@
                         <div class="row justify-content-evenly">
                             <div class="col-lg-8 col-md-10 text-center mb-5 position-relative">
                                 <div class="orn-1">
-                                    <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                    <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
                                 </div>
                                 <div class="couple-content">
                                     <div class="title-section " data-anim="fade-down">
-                                        <h2>Bride & Groom</h2>
+                                        <h2>Assalamualaikum Warahmatullahi Wabarakatuh</h2>
                                     </div>
                                     <div data-anim="zoom-in">
-                                        <p>Kami adalah sepasang manusia yang sedang berbahagia. Kami mengundang Bapak/Ibu/Saudara sekalian untuk menghadiri hari bahagia kami. Ini adalah kami</p>
+                                        <p>Kami mengundang Bapak/Ibu/Saudara untuk menghadiri hari bahagia kami</p>
                                     </div>
                                 </div>
                             </div>
@@ -211,9 +184,7 @@
                                                                                                             </div>
 
                                                     <div class="couple-parent-name">
-                                                        <p class="notranslate">Tinon Sumudita</p>
-                                                                                                                                                                                    <p>&</p>
-                                                                                                                                                                            <p class="notranslate">Reni Mursidayanti</p>
+                                                        <p class="notranslate">Bapak Tinon Sumudita & Ibu Reni Mursidayanti</p>
                                                     </div>
                                                                                             </div>
                                                                                             <div class="sosmed-wrap mt-3">
@@ -239,9 +210,7 @@
                                                                                                             </div>
 
                                                     <div class="couple-parent-name">
-                                                        <p class="notranslate">(Alm) Tukirin</p>
-                                                                                                                                                                                    <p>&</p>
-                                                                                                                                                                            <p class="notranslate">Susiana Harijanti</p>
+                                                        <p class="notranslate">Bapak (Alm) Tukirin & Ibu Susiana Harijanti</p>
                                                     </div>
                                                                                             </div>
                                                                                             <div class="sosmed-wrap mt-3">
@@ -298,7 +267,7 @@
                     <div class="container position-relative">
                         <div class="orn-1">
                             <div data-anim="zoom-in-up">
-                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
                             </div>
                         </div>
                         <div class="row align-items-center justify-content-center flex-lg-row-reverse flex-column">
@@ -307,7 +276,7 @@
                                     <div class="background-full " data-anim="width-left"></div>
                                                                             <div class="col-12 col-lg-6">
                                             <div class="image-story-wrap overflow-hidden" data-anim="slide-right">
-                                                <img src="https://media.viding.co/dmlkaW5nIGNvIGltYWdlIHByb3h5IGJ5IGZseS5pbw/rs:auto:0:0:1/g:no/aHR0cHM6Ly9wZXRyYS52aWRpbmcuY28vYmFja2dyb3VuZC9NSkV5aldxemtMdjV5NGZWcjM2ZmQwVWc2cHI0Q21QSnVqQ09zcXZuLmpwZw.webp" alt="story-background" class="story-image parallax" width="100%" height="100%">
+                                                <img src="{{ asset('assets/undangan/images/6.jpg')}}" alt="story-background" class="story-image parallax" width="100%" height="100%">
                                             </div>
                                         </div>
                                                                         <div class="col-12  col-md-10 col-lg-6 ">
@@ -315,7 +284,7 @@
                                             <div class="title-section">
                                                 <h2 class="text-center">Our Story</h2>
                                             </div>
-                                            <p><em>Cinta tidak kenal waktu, kondisimu, berapa usiamu, dan siapa kamu. Cinta adalah pendekripsian yang tidak ada habisnya. Cinta bukan apa-apa bagi yang tidak pernah merasakan. Sebab ia hanya sebuah kata. Mudah di ucap. Namun tidak mudah untuk di jelaskan. Cinta itu yang kami rasakan. Cinta itu adalah asal mula. Asal Mula yang kami rasakan melalui sebuah jaringan sosial media. Berawal dari Aditya menyapa Melissa. Usut punya usut, kedekatan itu pun terjalin hanya melalui sosmed.Disanalah kami memulai menulis cerita dalam sebuah buku yang sama merasakan hal yang sama tanpa dipaksa. Tepat tanggal 11 bulan Juli Tahun 2012 kami pun menjalin suatu ikatan. Kami yakin Allah SWT telah merencanakannya,singkat dan bermakna pendekatan yang dilakukan hanya satu minggu.</em></p>
+                                            <p><em>Cinta tidak kenal waktu, kondisimu, berapa usiamu, dan siapa kamu. Cinta adalah pendekripsian yang tidak ada habisnya. Cinta bukan apa-apa bagi yang tidak pernah merasakan. Sebab ia hanya sebuah kata. Mudah di ucap. Namun tidak mudah untuk di jelaskan. Cinta itu yang kami rasakan. Cinta itu adalah asal mula. Asal Mula yang kami rasakan saat pertama kali bertemu dalam satu tempat kerja yang sama. Saat itu kami sama sama berstatus karyawan baru yang sedang mengejar harapan untuk lulus dari masa percobaan. Namun, seiring berjalannya waktu karena begitu banyak kesamaan kami yakin Allah SWT telah merencanakannya,singkat dan bermakna pendekatan kami memutuskan menjalin hubungan pada tanggal 8 Oktober 2023. </em></p>
                                         </div>
                                     </div>
                                 </div>
@@ -336,12 +305,12 @@
                                     <div class="overlay-elements-gradient overlay-bottom"></div>
                                 </div>
                                 <div class="container position-relative">
-                                    <div class="venue-wrapper" style="display: none;">
+                                    <div class="venue-wrapper">
                                         <div class="col-md-8 col-xl-6 position-relative mx-auto" data-anim="slide-up">
-                                            <div class="orn-1">
-                                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
-                                            </div>
-                                            <div class="venue-description shadow">
+                                            {{-- <div class="orn-1">
+                                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                            </div> --}}
+                                            {{-- <div class="venue-description shadow">
                                                 <div class=" title-section" data-anim="fade-down">
                                                     <h2>Lokasi</h2>
                                                 </div>
@@ -350,7 +319,7 @@
 <h5><strong>Sabtu, 27 September 2025</strong></h5>
 <p>Besar harapan kami akan kehadiran Bapak/Ibu/Saudara sekalian tentunya dengan memperhatikan anjuran dari Pemerintah. Untuk itu kami memberlakukan protokol kesehatan sebagaimana instruksi dibawah ini</p>
                                                     </div>
-                                                                                            </div>
+                                                                                            </div> --}}
                                         </div>
                                         <div class="col-md-12 m-auto">
                                             <div class="venue-content">
@@ -399,7 +368,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                                                                                                                     <div class="event-name" data-anim="zoom-in">
-                                                                                        <h4 style="font-family: ; font-size: px;">Acara Pernikahan</h4>
+                                                                                        <h4 style="font-family: ; font-size: px;">Akad</h4>
                                                                                         <p>Sabtu</p>
                                                                                         <div class="date">
                                                                                             <h5>27</h5>
@@ -493,7 +462,7 @@
                             </div>
                                                     </div>
                         <!-- rsvp section -->
-                                                                                    <div class="rsvp-section">
+                            <div class="rsvp-section">
                                     <div class="elements-wrapper-absolute">
                                         <div class="background-element">
                                             <img src="{{ asset('assets/undangan/images/background.webp') }}" alt="bg-art" width="1440" height="810">
@@ -502,7 +471,7 @@
                                     </div>
                                     <div class="container position-relative">
                                         <div class="orn-1">
-                                            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                            <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
                                         </div>
                                         <div class="rsvp-wrapper">
                                             <div class="background-full" data-anim="width-right"></div>
@@ -515,29 +484,76 @@
                                                 <div class="col-md-6">
                                                     <div class="rsvp-form">
                                                         <div class="col-lg-10 mx-lg-auto col-12">
-                                                            <div class="title-section" data-anim="fade-down">
-                                                                <h2><p>RSVP</p></h2>
-                                                            </div>
-                                                            <div id="cardRSVP">
-                                                                <form action="#" method="post" data-anim="fade" data-anim-delay="500" id="tambahdata">
-                                                                    <input required type="text" name="name" class="form-control mb-3" placeholder="Name" value=""  data-anim="zoom-in-up" data-anim-delay="500">
-                                                                                                                                            <input required type="text" name="email" class="form-control mb-3" placeholder="Email" value="" data-anim="zoom-in-up" data-anim-delay="500">
-                                                                                                                                                                                                                <input required type="text" name="no_hp" class="form-control mb-3" placeholder="Phone Number" value="" data-anim="zoom-in-up" data-anim-delay="500">
-                                                                                                                                                                                                                <input required maxlength="3" max="100" type="number" name="jumlah" class="form-control mb-3" placeholder="Number of Guest" min="1" data-anim="zoom-in-up" data-anim-delay="500">
-                                                                                                                                        <select required name="status" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
-                                                                        <option disabled selected>Confirmation of Attendance</option>
-                                                                        <option value="1">Attend</option>
-                                                                        <option value="0">Not Attend</option>
-                                                                    </select>
-                                                                                                                                                                                                            <input type="hidden" name="invitation_id" value="">
-                                                                    <input type="hidden" name="stepper_id" value="1351">
-                                                                    <div class="row justify-content-center">
-                                                                        <div class="col-md-6">
-                                                                            <button class="btn btn-custom color-secondary w-100" type="submit" id="tombolsimpan" data-anim="zoom-in-up" data-anim-delay="500">Send</button>
+                                                                <div id="cardRSVP" style="display: none">
+                                                                    <div class="card" id="card">
+                                                                        <div class="title-section" data-anim="fade-down">
+                                                                            <h3><p>KARTU AKSES MASUK</p></h3>
+                                                                        </div>
+                                                                        @foreach ($wedding as $item)
+                                                                            <h1>{{ $item->name }}</h1>
+                                                                        @endforeach
+                                                                        <p>{{ date("d M Y H:II", strtotime($invited->date)) }}</p>
+
+                                                                        <div class="info">
+                                                                            <p><strong>Nama:</strong> {{ $guest->name }}</p>
+                                                                            <p>Kategori: {{$guest->group}}</p>
+                                                                            <p>Jumlah tamu: {{$guest->rsvp_number}}</p>
+                                                                        </div>
+
+                                                                        <div class="important">
+                                                                            <p><strong>Penting</strong></p>
+                                                                            <p>Silakan tunjukkan QRCode disamping kepada penerima tamu yang bertugas saat acara berlangsung.</p>
+                                                                        </div>
+
+                                                                        <div class="qr-section">
+                                                                            <div id="qrcode"></div>
+                                                                        </div>
+
+                                                                        <div class="ss-copyright">
+                                                                            @foreach ($wedding as $item)
+                                                                                <span>© Copyright {{ $item->name }} {{date("Y")}}</span>
+                                                                            @endforeach
+                                                                            <span>Developed by <a href="https://wa.me/6285784297132" target="_blank">alvinzf</a></span>
                                                                         </div>
                                                                     </div>
-                                                                </form>
-                                                            </div>
+                                                                    <div class="card" id="card">
+                                                                        <div class="col-md-12 d-flex justify-content-center">
+                                                                            <button class="btn btn-custom color-secondary w-100 has-animate" id="download-btn">Download Kartu Akses</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="formRSVP">
+                                                                    <div class="title-section" data-anim="fade-down">
+                                                                        <h2><p>RSVP</p></h2>
+                                                                    </div>
+                                                                    <form id="rsvpdata" onclick="submitRsvp()" data-anim="fade" data-anim-delay="500">
+                                                                        <input required type="text" name="name" class="form-control mb-3" placeholder="Nama" value=" {{$to}}" readonly data-anim="zoom-in-up" data-anim-delay="500">
+                                                                        <select required name="jumlah" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
+                                                                            <option disabled selected>Jumlah Tamu</option>
+                                                                            @for ($i = 1; $i <= $guest->quota; $i++)
+                                                                                <option value="{{ $i }}">{{ $i }}</option>
+                                                                            @endfor
+                                                                        </select>
+                                                                        <select required name="status" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
+                                                                            <option disabled selected>Jenis Acara</option>
+                                                                            <option value="akad">Akad</option>
+                                                                            <option value="resepsi">Resepsi</option>
+                                                                        </select>
+                                                                        <select required name="status" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
+                                                                            <option disabled selected>Konfirmasi Kehadiran</option>
+                                                                            <option value="1">Hadir</option>
+                                                                            <option value="0">Tidak Hadir</option>
+                                                                        </select>
+                                                                        <input type="hidden" name="invitation_id" value="">
+                                                                        <input type="hidden" name="stepper_id" value="1351">
+                                                                        <div class="row justify-content-center">
+                                                                            <div class="col-md-6">
+                                                                                <div class="btn btn-custom color-secondary w-100" type="button" id="tombolsimpan" data-anim="zoom-in-up" data-anim-delay="500">Send</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -545,7 +561,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                                                        </section>
+                 </section>
 
                             <!-- Wishes section -->
                 <section class="wishes-section moveable-section" data-id="6">
@@ -578,7 +594,7 @@
                                                             <div class="col-md-8 col-lg-6">
                                     <div class="wishes-preview">
                                         <div class="orn-1">
-                                            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                            <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
                                         </div>
                                         <div class="card">
                                             <div class="card-body text-left">
@@ -609,7 +625,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-md-10 text-center position-relative">
                                 <div class="orn-1">
-                                    <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
                                 </div>
                                 <div class="appology-wrap">
                                     <div class="title-section">
@@ -636,7 +652,7 @@
                     <div class="container position-relative">
                         <div class="orn-1">
                             <div data-anim="slide-up" data-anim-delay="500">
-                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
                             </div>
                         </div>
                         <div class="thank-wrapper">
@@ -787,8 +803,9 @@
 var guest_type = ""
 var invitation_lang = "en"
     </script>
-  <script src="https://viding.co/admin-front-end/js/add_robot_field.js?v=08ec585511fbc9d5a06347485749d07bda49368d"></script>
-    <!-- script libraries -->
+  <script src="{{ asset('assets/invitation/base/admin-front-end/js/add_robot_field.js?v=08ec585511fbc9d5a06347485749d07bda49368d')}}"></script>
+
+  <!-- script libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/3.6.11/js/splide.js" integrity="sha512-w59vitZ7hVdBIw8eTlp69j02OB/eo6cyyuvnMH1HzQYmMbrJWB5moOAsghwrAsN5KJEu4N9BZTDg4cOy54or+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -797,8 +814,41 @@ var invitation_lang = "en"
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://themes.viding.co/assets/js/colorpicker.min.js?v=5a09248438c634cf7d719879bcd4828dfee64f1f"></script>
-    <script src="https://themes.viding.co/assets/js/gift_registry_script.js?v=6b8f7f39b29ca238655923c1aed66ba770086fed"></script>
+
+    <script src="{{ asset('assets/invitation/theme/assets/js/gift_registry_script.js?v=6b8f7f39b29ca238655923c1aed66ba770086fed')}}"></script>
+    <script src="{{ asset('assets/invitation/theme/assets/js/colorpicker.min.js?v=5a09248438c634cf7d719879bcd4828dfee64f1f')}}"></script>
+
+
+    <script>
+         function submitRsvp(){
+        //ajax request to guest-confirmation
+        // $.ajax({
+        //     url: "{{route('guest-confirmation')}}",
+        //     type: 'post',
+        //     success: function(data) {
+        //         console.log(data);
+        //         $('#result').text(data.title);
+
+        //     }
+        // });
+
+        $("#cardRSVP").show();
+        $("#formRSVP").hide();
+
+    }
+    $(function() {
+        $('rsvpdata').submit(function() {
+            $.ajax({
+                type: 'POST',
+                url: "{{route('guest-confirmation')}}",
+                data: { code: $(this).code.value,
+                        jumlah: $(this).jumlah.value }
+            });
+            return false;
+        });
+    })
+    </script>
+
     <style>
     input.error,
     select.error {
@@ -837,6 +887,48 @@ var invitation_lang = "en"
         value   : window.location.href
     }).prependTo('#formGift');
 </script>
+ <!-- Modal Trigger -->
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modalHTML = `
+            <div class="modal fade" id="rsvpModal" tabindex="-1" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <p>Mohon dapat melakukan konfirmasi kehadiran untuk mendapatkan kartu akses ke acara Pernikahan</p>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.body.insertAdjacentHTML("beforeend", modalHTML);
+
+        const rsvpModal = new bootstrap.Modal(document.getElementById("rsvpModal"));
+        const rsvpSection = document.querySelector('.rsvp-section');
+
+        window.addEventListener('scroll', function () {
+            const sectionPosition = rsvpSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.5;
+
+            if (sectionPosition < screenPosition) {
+                rsvpModal.show();
+                window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the modal
+            }
+        });
+
+        $("#cardRSVP").hide();
+        var rsvp_stat = {{$guest->rsvp}};
+        if (rsvp_stat == 1){
+            $("#cardRSVP").show();
+            $("#formRSVP").hide();
+        }
+    });
+
+
+</script>
+</div>
     <script>
     var player;
     var player2;
@@ -898,9 +990,7 @@ var invitation_lang = "en"
             }
         }
     }
-    $('#closeEnvelope, #btn-envelope, #btn-cover').on("click", function() {
-        loadYT();
-    });
+
 </script>
 
 <script>
@@ -968,12 +1058,11 @@ var invitation_lang = "en"
     });
 </script>
 
-    <!-- scripts plugins -->
-    <script src="https://themes.viding.co/theme_79/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('assets/invitation/theme/theme_79/assets/js/jquery.magnific-popup.min.js')}}"></script>
 
-    <!-- scripts custom -->
-    <script src="https://themes.viding.co/theme_79/assets/js/countdown.js"></script>
-    <script src="https://themes.viding.co/theme_79/assets/js/app.js?v=262981de74dd708fb8f8f51b5e4800ea92aee483"></script>
+    <script src="{{ asset('assets/invitation/theme/theme_79/assets/js/countdown.js')}}"></script>
+
+    <script src="{{ asset('assets/invitation/theme/theme_79/assets/js/app.js?v=262981de74dd708fb8f8f51b5e4800ea92aee483')}}"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -1088,7 +1177,7 @@ var invitation_lang = "en"
         );
 
 
-        function reload_guestbook_data() {
+        function reload_guestbook_data() { //wish
             if ($('#wishes_wrapper').length) {
                 $('#wishes_wrapper').html('<p class="mb-4"><b>Sedang Memuat Komentar..</b></p>');
                 var reload_url = $('#wishes_wrapper').data('url');
@@ -1221,6 +1310,33 @@ var invitation_lang = "en"
             });
     </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"933d49820d14294b","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.4.0-1-g37f21b1","token":"9788b2a8af4d4335bde0fab3174b2eed"}' crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const qrCode = new QRCode(document.getElementById("qrcode"), {
+            text: "{{$guest->code}}", // Replace with your desired URL or data
+            width: 128, // Width of the QR code
+            height: 128, // Height of the QR code
+            colorDark: "#000000", // Dark color
+            colorLight: "#ffffff", // Light color
+            correctLevel: QRCode.CorrectLevel.H // Error correction level
+        });
+    });
+</script>
+
+<script>
+        document.getElementById('download-btn').addEventListener('click', () => {
+        const card = document.getElementById('card');
+
+        html2canvas(card).then(canvas => {
+            const link = document.createElement('a');
+            link.download = 'kartu-akses-masuk.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    });
+</script>
 </body>
 
 </html>

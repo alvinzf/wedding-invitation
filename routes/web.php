@@ -18,3 +18,4 @@ Route::get('/attendance', [GuestAttendanceController::class, 'index'])->name('at
 Route::get('/attendance/table', [GuestAttendanceController::class, 'table'])->name('attendance.table');
 Route::get('/attendance/detail', [GuestAttendanceController::class, 'detail'])->name('attendance.detail');
 Route::post('/attendance/submit', [GuestAttendanceController::class, 'submit'])->name('attendance.submit');
+Route::post('/guest-confirmation', [GuestAttendanceController::class, 'guestConfirmation'])->name('guest-confirmation');
