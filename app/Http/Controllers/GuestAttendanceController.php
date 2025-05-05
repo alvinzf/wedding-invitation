@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Guest;
+use App\Models\Wishes;
 
 class GuestAttendanceController extends Controller
 {
@@ -18,6 +19,11 @@ class GuestAttendanceController extends Controller
         } else {
             return response()->json(['status' => false]);
         }
+    }
+    public function guestWishes(){
+        $wishes = Wishes::all();
+        return view('wishes', ['wishes' => $wishes]);
+
     }
      // Fetch table data
      public function table(Request $request)

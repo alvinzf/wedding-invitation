@@ -529,7 +529,7 @@
                                         <div class="card">
                                             <div class="card-body text-left">
                                                 <div class="wishes" data-anim="slide-up">
-                                                    <div id="wishes_wrapper" data-url='https://viding.co/booksfour/dummyaccount.viding.co'>
+                                                    <div id="wishes_wrapper" data-url="{{route('guest-wishes')}}">
                                                         <p class="mb-4">
                                                             <b>Sedang Memuat Komentar..</b>
                                                         </p>
