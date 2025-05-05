@@ -51,6 +51,7 @@ class HomeController extends Controller
             'galery' => $galery,
             'guest' => $guest,
             'invited' => $invited,
+            'code' => $request->to,
         ]);
     }
 

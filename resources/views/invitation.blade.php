@@ -325,71 +325,9 @@
                                             <div class="venue-content">
                                                 <div class="row justify-content-center row-venue-sm">
                                                                                                                                                                         <div class=" col-md-6 col-xl-5  position-relative my-0 my-md-4">
-                                                                <div class="card">
-                                                                    <div class="background-full" data-anim="height-down"></div>
-                                                                    <div class="card-body">
-                                                                        <div class="row justify-content-between">
-                                                                            <div class="col-md-12">
-                                                                                <div class="ribbon-venue shadow" data-animationloop="keyframe">
-                                                                                    <div data-anim="zoom-in">
-                                                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" style="enable-background:new 0 0 560 560;overflow: visible;" xml:space="preserve">
-                                                                                            <style type="text/css">
-                                                                                                .st0 {
-                                                                                                    fill: var(--color-secondary);
-                                                                                                }
 
-                                                                                                .st1 {
-                                                                                                    fill: none;
-                                                                                                    stroke: var(--color-secondary);
-                                                                                                    stroke-width: 19;
-                                                                                                    stroke-linecap: round;
-                                                                                                    stroke-miterlimit: 10;
-                                                                                                    transform-origin: 50% 75%;
-                                                                                                }
-                                                                                            </style>
-                                                                                            <g id="Layer_1">
-                                                                                            </g>
-                                                                                            <g id="Layer_3">
-                                                                                                <g>
-                                                                                                    <g>
-                                                                                                        <path class="st0" d="M273.3,48.3c34.1,0,66.1,13.3,90.3,37.4c24.1,24.1,37.4,56.2,37.4,90.3c0,93.4-63.7,165.3-105.8,212.8c-4.4,4.9-8.5,9.6-12.3,14c-2.9,3.4-6.3,5.2-9.5,5.2c-4.1,0-7.4-2.8-9.4-5.2c-4.6-5.3-9.4-10.7-14.5-16.5c-20.4-23-43.5-49.1-63-80c-22.1-35-34.9-69.1-39.2-104.3c-4.8-39.7,6.8-79.6,31.9-109.4c22.5-26.7,53.5-42.4,87.3-44.2C268.7,48.4,271.1,48.3,273.3,48.3 M273.3,29.3c-2.6,0-5.2,0.1-7.8,0.2c-87.5,4.6-147.7,87.9-137.1,174.9c11.7,96.3,80.1,163.3,121.1,210.8c6.8,7.8,15.3,11.8,23.8,11.8c8.6,0,17.1-3.9,23.9-11.8C338.4,367.6,420,286.7,420,176C420,95,354.3,29.3,273.3,29.3L273.3,29.3z" />
-                                                                                                    </g>
-                                                                                                    <g>
-                                                                                                        <path class="st0" d="M275.1,118c30.6,0,55.5,24.9,55.5,55.5S305.7,229,275.1,229s-55.5-24.9-55.5-55.5S244.5,118,275.1,118 M275.1,99c-41.1,0-74.5,33.3-74.5,74.5S234,248,275.1,248s74.5-33.3,74.5-74.5S316.2,99,275.1,99L275.1,99z" />
-                                                                                                    </g>
-                                                                                                </g>
-                                                                                            </g>
-                                                                                            <g id="Layer_2">
-                                                                                                </image>
-                                                                                                <ellipse class="st1" cx="272.8" cy="437.9" rx="146.4" ry="40.9" />
-                                                                                                <ellipse class="st0 dot" cx="273.6" cy="437.9" rx="63.1" ry="17" />
-                                                                                            </g>
-                                                                                        </svg>
-                                                                                    </div>
-                                                                                </div>
-                                                                                                                                                                    <div class="event-name" data-anim="zoom-in">
-                                                                                        <h4 style="font-family: ; font-size: px;">Akad</h4>
-                                                                                        <p>Sabtu</p>
-                                                                                        <div class="date">
-                                                                                            <h5>27</h5>
-                                                                                            <div></div>
-                                                                                            <p>September <br>2025</p>
-                                                                                        </div>
-                                                                                        <p>08:00 - 10:00 </p>
-                                                                                    </div>
-                                                                                     <div class="event-place notranslate" data-anim="zoom-in">
-                                                                                    <h4 style="font-family: ; font-size: px;">Griya Ardhiya Garini</h4>
-                                                                                    <div>Halim, Jakarta Timur</div>
-                                                                                </div>
-                                                                                                                                                                    <div class="widget-wrapper" data-anim="zoom-in">
-                                                                                        <a class="btn btn-custom mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event2416">Location</a>
-                                                                                    </div>
-                                                                                                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
                                                             </div>
-                                                                                                                    <div class=" col-md-6 col-xl-5  position-relative my-0 my-md-4">
+                                                                                                                    <div class=" col-md-12 col-xl-5  position-relative my-0 my-md-4">
                                                                 <div class="card">
                                                                     <div class="background-full" data-anim="height-down"></div>
                                                                     <div class="card-body">
@@ -487,38 +425,36 @@
                                                                 <div id="cardRSVP" style="display: none">
                                                                     <div class="card" id="card">
                                                                         <div class="title-section" data-anim="fade-down">
-                                                                            <h3><p>KARTU AKSES MASUK</p></h3>
+                                                                            <h3><p>RSVP CARD</p></h3>
                                                                         </div>
                                                                         @foreach ($wedding as $item)
                                                                             <h1>{{ $item->name }}</h1>
                                                                         @endforeach
                                                                         <p>{{ date("d M Y H:II", strtotime($invited->date)) }}</p>
-
-                                                                        <div class="info">
-                                                                            <p><strong>Nama:</strong> {{ $guest->name }}</p>
-                                                                            <p>Kategori: {{$guest->group}}</p>
-                                                                            <p>Jumlah tamu: {{$guest->rsvp_number}}</p>
-                                                                        </div>
-
                                                                         <div class="important">
                                                                             <p><strong>Penting</strong></p>
-                                                                            <p>Silakan tunjukkan QRCode disamping kepada penerima tamu yang bertugas saat acara berlangsung.</p>
+                                                                            <p>Silakan sebutkan kode atau tunjukkan QRCode berikut kepada penerima tamu yang bertugas saat acara berlangsung.</p>
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <h2>{{ $guest->name }}</h2>
+                                                                            <p>Jumlah Tamu: <span id="guest_count">{{$guest->rsvp_number}}</span></p>
                                                                         </div>
 
                                                                         <div class="qr-section">
                                                                             <div id="qrcode"></div>
+                                                                            <h2>{{$code}}</h2>
                                                                         </div>
 
                                                                         <div class="ss-copyright">
                                                                             @foreach ($wedding as $item)
                                                                                 <span>© Copyright {{ $item->name }} {{date("Y")}}</span>
                                                                             @endforeach
-                                                                            <span>Developed by <a href="https://wa.me/6285784297132" target="_blank">alvinzf</a></span>
+                                                                            <span>Developed by <a href="https://github.com/alvinzf" target="_blank">alvinzf</a></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="card" id="card">
                                                                         <div class="col-md-12 d-flex justify-content-center">
-                                                                            <button class="btn btn-custom color-secondary w-100 has-animate" id="download-btn">Download Kartu Akses</button>
+                                                                            <button class="btn btn-custom color-secondary w-100 has-animate" id="download-btn">Download RSVP Card</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -526,29 +462,23 @@
                                                                     <div class="title-section" data-anim="fade-down">
                                                                         <h2><p>RSVP</p></h2>
                                                                     </div>
-                                                                    <form id="rsvpdata" onclick="submitRsvp()" data-anim="fade" data-anim-delay="500">
+                                                                    <form id="rsvpdata" data-anim="fade" data-anim-delay="500">
                                                                         <input required type="text" name="name" class="form-control mb-3" placeholder="Nama" value=" {{$to}}" readonly data-anim="zoom-in-up" data-anim-delay="500">
-                                                                        <select required name="jumlah" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
-                                                                            <option disabled selected>Jumlah Tamu</option>
+                                                                        <select required name="jumlah" id="rsvp_number" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
+                                                                            <option disabled selected >Jumlah Tamu</option>
                                                                             @for ($i = 1; $i <= $guest->quota; $i++)
                                                                                 <option value="{{ $i }}">{{ $i }}</option>
                                                                             @endfor
                                                                         </select>
-                                                                        <select required name="status" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
-                                                                            <option disabled selected>Jenis Acara</option>
-                                                                            <option value="akad">Akad</option>
-                                                                            <option value="resepsi">Resepsi</option>
-                                                                        </select>
-                                                                        <select required name="status" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
+                                                                        <select required name="status" id="rsvp_status" class="form-select mb-3" data-anim="zoom-in-up" data-anim-delay="500">
                                                                             <option disabled selected>Konfirmasi Kehadiran</option>
                                                                             <option value="1">Hadir</option>
                                                                             <option value="0">Tidak Hadir</option>
                                                                         </select>
-                                                                        <input type="hidden" name="invitation_id" value="">
-                                                                        <input type="hidden" name="stepper_id" value="1351">
+                                                                        <input type="hidden" name="code" value="{{$code}}">
                                                                         <div class="row justify-content-center">
                                                                             <div class="col-md-6">
-                                                                                <div class="btn btn-custom color-secondary w-100" type="button" id="tombolsimpan" data-anim="zoom-in-up" data-anim-delay="500">Send</div>
+                                                                                <button onclick="submitRsvp()"  class="btn btn-custom color-secondary w-100" type="button" id="savebtn" data-anim="zoom-in-up" data-anim-delay="500">Kirim</button>
                                                                             </div>
                                                                         </div>
                                                                     </form>
@@ -820,33 +750,39 @@ var invitation_lang = "en"
 
 
     <script>
-         function submitRsvp(){
+    function submitRsvp(){
         //ajax request to guest-confirmation
-        // $.ajax({
-        //     url: "{{route('guest-confirmation')}}",
-        //     type: 'post',
-        //     success: function(data) {
-        //         console.log(data);
-        //         $('#result').text(data.title);
-
-        //     }
-        // });
+        $.ajax({
+            url: "{{route('guest-confirmation')}}",
+            type: 'post',
+            data: {
+                //csrf
+                _token: "{{ csrf_token() }}",
+                code: "{{$code}}",
+                number: $("#rsvp_number").val(),
+                status: $("#rsvp_status").val()
+            },
+            success: function(data) {
+                console.log(data);
+            }
+        });
 
         $("#cardRSVP").show();
         $("#formRSVP").hide();
+        $("#guest_count").html($("#rsvp_number").val())
 
     }
-    $(function() {
-        $('rsvpdata').submit(function() {
-            $.ajax({
-                type: 'POST',
-                url: "{{route('guest-confirmation')}}",
-                data: { code: $(this).code.value,
-                        jumlah: $(this).jumlah.value }
-            });
-            return false;
-        });
-    })
+    // $(function() {
+    //     $('rsvpdata').submit(function() {
+    //         $.ajax({
+    //             type: 'POST',
+    //             url: "{{route('guest-confirmation')}}",
+    //             data: { code: $(this).code.value,
+    //                     jumlah: $(this).jumlah.value }
+    //         });
+    //         return false;
+    //     });
+    // })
     </script>
 
     <style>
@@ -1187,7 +1123,7 @@ var invitation_lang = "en"
 
         $("#guestbook_form").validate({
             submitHandler: function(form) {
-                var actionType = $('#tombolsimpan').val();
+                var actionType = $('#savebtn').val();
                 $('#guestbook_submit_btn').prop('disabled', true);
                 $('#guestbook_submit_btn').html('Sending..');
 
