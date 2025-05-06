@@ -9,7 +9,7 @@
 <meta name="description" content="Thara & Alvin - 27 September 2025">
 
 
-    <link rel="stylesheet" href="{{ asset('assets/invitation/theme/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db')}}">    <!-- Preconnect -->
+    {{-- <link rel="stylesheet" href="{{ asset('assets/invitation/theme/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db')}}">    <!-- Preconnect --> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -178,7 +178,7 @@
                                             <h3 class="bride_style notranslate">Redina Thara Alifia</h3>
                                             <div class="couple-parent">
                                                                                                     <div class="couple-parent-description">
-                                                                                                                    <p>Lovely Daughter of</p>
+                                                                                                                    <p>Putri pertama dari</p>
                                                                                                             </div>
 
                                                     <div class="couple-parent-name">
@@ -204,7 +204,7 @@
                                             <h3 class="bride_style notranslate">Alvin Zulham Firdananta</h3>
                                             <div class="couple-parent">
                                                                                                     <div class="couple-parent-description">
-                                                                                                                    <p>Precious Son of</p>
+                                                                                                                    <p>Putra keempat dari</p>
                                                                                                             </div>
 
                                                     <div class="couple-parent-name">
@@ -223,24 +223,25 @@
                         <div class="row justify-content-center">
                             <div class="col-md-10 col-lg-9 col-xl-7">
                                 <div class="reminder-wrap shadow" data-anim="slide-up">
-                                    <div class="countdown" date="27/09/2025 08:00:00 UTC" data-anim="zoom-in">
+                                    <div class="countdown" id="countdown" data-anim="zoom-in">
                                         <div class="days">
-                                            <p class="angka">00</p>
+                                            <p class="angka" id="days">00</p>
                                             <p class="huruf">Days</p>
                                         </div>
                                         <div class="hours">
-                                            <p class="angka">00</p>
+                                            <p class="angka" id="hours">00</p>
                                             <p class="huruf">Hours</p>
                                         </div>
                                         <div class="minutes">
-                                            <p class="angka">00</p>
+                                            <p class="angka" id="minutes">00</p>
                                             <p class="huruf">Mins</p>
                                         </div>
                                         <div class="seconds">
-                                            <p class="angka">00</p>
+                                            <p class="angka" id="seconds">00</p>
                                             <p class="huruf">Secs</p>
                                         </div>
                                     </div>
+
                                     									<a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=The+Wedding+of+Thara+%26+Alvin&amp;details=Visit+the+invitation+here+<a href='#'>#</a>&amp;dates=20250927T110000%2F20250927T130000&amp;ctz=Asia%2FJakarta" target="_blank" class="btn btn-custom color-secondary btn-reminder">
                                     										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_2411_134)">
@@ -325,7 +326,7 @@
                                                                                                                                                                         <div class=" col-md-6 col-xl-5  position-relative my-0 my-md-4">
 
                                                             </div>
-                                                                                                                    <div class=" col-md-12 col-xl-5  position-relative my-0 my-md-4">
+                                                                                                                    <div class=" row justify-content-center">
                                                                 <div class="card">
                                                                     <div class="background-full" data-anim="height-down"></div>
                                                                     <div class="card-body">
@@ -731,7 +732,6 @@
 var guest_type = ""
 var invitation_lang = "en"
     </script>
-  <script src="{{ asset('assets/invitation/base/admin-front-end/js/add_robot_field.js?v=08ec585511fbc9d5a06347485749d07bda49368d')}}"></script>
 
   <!-- script libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></script>
@@ -855,7 +855,7 @@ var invitation_lang = "en"
  <script>
     document.addEventListener("DOMContentLoaded", function () {
         const modalHTML = `
-            <div class="modal fade" id="rsvpModal" tabindex="-1" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+            <div class="modal fade" id="rsvpModal" tabindex="-1" aria-labelledby="rsvpModalLabel">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body text-center">
@@ -1027,10 +1027,35 @@ var invitation_lang = "en"
 
     <script src="{{ asset('assets/invitation/theme/theme_79/assets/js/jquery.magnific-popup.min.js')}}"></script>
 
-    <script src="{{ asset('assets/invitation/theme/theme_79/assets/js/countdown.js')}}"></script>
-
     <script src="{{ asset('assets/invitation/theme/theme_79/assets/js/app.js?v=262981de74dd708fb8f8f51b5e4800ea92aee483')}}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const targetDate = new Date("2025-09-27T11:00:00Z").getTime();
 
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    document.getElementById("countdown").innerHTML = "<p>Event has started!</p>";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").textContent = days;
+                document.getElementById("hours").textContent = hours;
+                document.getElementById("minutes").textContent = minutes;
+                document.getElementById("seconds").textContent = seconds;
+            }
+
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+        });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const gallery_splide = document.querySelector(".gallery");
@@ -1276,7 +1301,7 @@ var invitation_lang = "en"
                 });
             });
     </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"933d49820d14294b","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.4.0-1-g37f21b1","token":"9788b2a8af4d4335bde0fab3174b2eed"}' crossorigin="anonymous"></script>
+{{-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"933d49820d14294b","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.4.0-1-g37f21b1","token":"9788b2a8af4d4335bde0fab3174b2eed"}' crossorigin="anonymous"></script> --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
