@@ -20,3 +20,4 @@ Route::get('/attendance/detail', [GuestAttendanceController::class, 'detail'])->
 Route::post('/attendance/submit', [GuestAttendanceController::class, 'submit'])->name('attendance.submit');
 Route::post('/guest-confirmation', [GuestAttendanceController::class, 'guestConfirmation'])->name('guest-confirmation');
 Route::get('/guest-wishes', [GuestAttendanceController::class, 'guestWishes'])->name('guest-wishes');
+Route::post('/guest-send-wish', [GuestAttendanceController::class, 'sendWish'])->name('send-wish');

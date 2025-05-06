@@ -89,7 +89,7 @@ body {
 }
 
 .logo-viding path {
-  fill: var(--vd-color-pink);
+  fill: green;
 }
 
 .color__button__trans {
@@ -222,7 +222,7 @@ small {
 }
 
 .scrolled .logo-viding path {
-  fill: var(--vd-color-pink);
+  fill: green;
 }
 
 .navbar-hide {
@@ -234,7 +234,7 @@ small {
   top: 0;
   left: 0;
   height: 2px;
-  background-color: var(--vd-color-pink);
+  background-color: green;
   width: 0;
   z-index: 9999;
 }
@@ -402,7 +402,7 @@ ul li {
 }
 
 .loader-wrapper span {
-  color: var(--vd-color-pink);
+  color: green;
   font-weight: 700;
   -webkit-animation: fade 2s linear infinite;
   animation: fade 2s linear infinite;
@@ -3364,11 +3364,11 @@ ul li {
   width: 2.5em;
   text-align: center;
   vertical-align: middle;
-  background: radial-gradient(rgba(255, 0, 128, 0.8) 60%, rgba(255, 255, 255, 1) 62%) !important;
+  background: radial-gradient(green 60%, rgba(255, 255, 255, 1) 62%) !important;
   position: relative;
   display: block;
   margin: 100px auto;
-  box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8);
+  box-shadow: 0px 0px 25px 3px green;
   -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -3385,6 +3385,15 @@ ul li {
 .btn-pink {
   background: #ff3190;
   color: rgba(255, 255, 255, .4);
+}
+
+.btn-green {
+    background: green;
+    color: rgba(255, 255, 255, .4);
+  }
+
+.btn-green:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .btn-pink:hover {

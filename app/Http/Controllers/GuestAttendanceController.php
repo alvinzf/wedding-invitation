@@ -21,8 +21,23 @@ class GuestAttendanceController extends Controller
         }
     }
     public function guestWishes(){
-        $wishes = Wishes::all();
+        //all wish and the newest first
+        $wishes = Wishes::orderBy('created_at', 'desc')->get();
         return view('wishes', ['wishes' => $wishes]);
+
+    }
+
+    public function sendWish(Request $request){
+        $wish = new Wishes();
+        $guest = Guest::where('code', $request->input('code'))->first();
+        if ($guest) {
+            $wish->name = $guest->name;
+            $wish->comment = $request->input('comment');
+            $wish->save();
+            return response()->json(['status' => true]);
+        } else {
+            return response()->json(['status' => false]);
+        }
 
     }
      // Fetch table data

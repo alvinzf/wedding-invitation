@@ -9,14 +9,12 @@
 <meta name="description" content="Thara & Alvin - 27 September 2025">
 
 
-    {{-- <link rel="stylesheet" href="https://themes.viding.co/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db">    <!-- Preconnect --> --}}
     <link rel="stylesheet" href="{{ asset('assets/invitation/theme/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db')}}">    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -52,7 +50,7 @@
         <div class="progress"></div>
 
                     <div class="position-fixed d-flex m-4 p-0" style="bottom: 0; right: 0px; z-index: 11;">
-                <button id="musicControl" class="btn btn-pink m-auto c-pointer btn-control">
+                <button id="musicControl" class="btn btn-green m-auto c-pointer btn-control">
                     <i id="playPause" class="icofont-ui-pause text-white mx-auto my-auto"></i>
                 </button>
             </div>
@@ -243,7 +241,7 @@
                                             <p class="huruf">Secs</p>
                                         </div>
                                     </div>
-                                    									<a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=The+Wedding+of+Thara+%26+Alvin&amp;details=Visit+the+invitation+here+<a href='#'>#</a>&amp;dates=20250927T080000%2F20250927T080000&amp;ctz=Asia%2FJakarta" target="_blank" class="btn btn-custom color-secondary btn-reminder">
+                                    									<a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=The+Wedding+of+Thara+%26+Alvin&amp;details=Visit+the+invitation+here+<a href='#'>#</a>&amp;dates=20250927T110000%2F20250927T130000&amp;ctz=Asia%2FJakarta" target="_blank" class="btn btn-custom color-secondary btn-reminder">
                                     										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_2411_134)">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM1.25 17.5V5H18.75V17.5C18.75 17.8315 18.6183 18.1495 18.3839 18.3839C18.1495 18.6183 17.8315 18.75 17.5 18.75H2.5C2.16848 18.75 1.85054 18.6183 1.61612 18.3839C1.3817 18.1495 1.25 17.8315 1.25 17.5ZM10 9.36625C12.08 7.2275 17.2812 10.97 10 15.7812C2.71875 10.9688 7.92 7.2275 10 9.36625Z" fill="#F9FDF9" />
@@ -504,24 +502,24 @@
                                             <h2 data-anim="fade-down">Wedding Wishes</h2>
                                         </div>
                                                                                     <div class="guestbook_form_wrapper">
-                                                <form action="https://viding.co/bookstore" method="post" id="guestbook_form" class="text-center">
-                                                    <input type="hidden" name="_token" value="ykWrss7g6MfAwLFhLxECTOrfte5UoHppvT22fjxc">                                                    <input type="hidden" name="domain" value="dummyaccount.viding.co">
+                                                <form id="submitWish" method="post"  class="text-center">
+                                                    <input type="hidden" name="code" value="{{$code}}">
                                                     <div class="mb-3">
-                                                        <input type="text" name="name" value=""  placeholder="Name" class="form-control">
+                                                        <input type="text" name="name" value="{{$to}}" readonly  placeholder="Name" class="form-control" >
                                                     </div>
                                                                                                             <div class="mb-3">
-                                                            <input type="text" name="alamat" value="" placeholder="Address" class="form-control">
                                                         </div>
                                                                                                                                                             <div class="mb-3">
-                                                        <textarea required name="comment" id="" rows="5" class="form-control" placeholder="Write your wishes"></textarea>
+                                                        <textarea required name="comment" id="comment" rows="5" class="form-control" placeholder="Tulis pesan dan doa Anda"></textarea>
                                                     </div>
-                                                                                                        <button class="btn btn-custom color-secondary m-auto w-100" id="guestbook_submit_btn">Send</button>
+                                                    <button onclick="submitWish()"  class="btn btn-custom color-secondary w-100" type="button" id="wishbtn" data-anim="zoom-in-up" data-anim-delay="500">Kirim</button>
+
                                                 </form>
                                             </div>
                                                                             </div>
                                 </div>
                             </div>
-                                                            <div class="col-md-8 col-lg-6">
+                                <div class="col-md-8 col-lg-6">
                                     <div class="wishes-preview">
                                         <div class="orn-1">
                                             <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
@@ -708,9 +706,9 @@
                                             <div></div>
                                         </div>
                                     </div>
-                                    <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas" data-src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Hotel%20Shangri-La%20Jakarta&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas" data-src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Griya%20Ardhya%20Garini&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                 </div>
-                                <a class="btn btn-custom color__button__trans color-secondary mt-3" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Shangri-La%20Jakarta" target="_blank">
+                                <a class="btn btn-custom color__button__trans color-secondary mt-3" href="https://www.google.com/maps/search/?api=1&query=Griya%20Ardhya%20Garini" target="_blank">
                                                                             Location
                                                                     </a>
                             </div>
@@ -772,6 +770,36 @@ var invitation_lang = "en"
         $("#guest_count").html($("#rsvp_number").val())
 
     }
+    function submitWish(){
+        //ajax request to guest-confirmation
+        $.ajax({
+            url: "{{route('send-wish')}}",
+            type: 'post',
+            data: {
+                //csrf
+                _token: "{{ csrf_token() }}",
+                code: "{{$code}}",
+                comment: $("#comment").val(),
+            },
+            success: function(data) {
+                reload_guestbook_data();
+                $("#comment").val('');
+                $('.guestbook_form_wrapper').html("<p class='text-center'>Terima Kasih, Anda telah memberikan komentar</p>");
+
+                $('#guestbook_submit_btn').prop('disabled', false);
+                $('#guestbook_submit_btn').html('Send');
+
+                reload_guestbook_data();
+                ScrollTrigger.refresh();
+
+                iziToast.success({
+                    title: 'Berhasil',
+                    message: 'Pesan anda telah ditambahkan. Terimakasih!',
+                    position: 'bottomRight'
+                });
+            }
+        });
+    }
     // $(function() {
     //     $('rsvpdata').submit(function() {
     //         $.ajax({
@@ -832,7 +860,7 @@ var invitation_lang = "en"
                     <div class="modal-content">
                         <div class="modal-body text-center">
                             <p>Mohon dapat melakukan konfirmasi kehadiran untuk mendapatkan kartu akses ke acara Pernikahan</p>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                            <button type="button" class="btn btn-custom color-secondary" data-bs-dismiss="modal">OK</button>
                         </div>
                     </div>
                 </div>
@@ -849,8 +877,11 @@ var invitation_lang = "en"
             const screenPosition = window.innerHeight / 1.5;
 
             if (sectionPosition < screenPosition) {
-                rsvpModal.show();
-                window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the modal
+                var rsvp_stat = {{$guest->rsvp}};
+                if (rsvp_stat == 1){
+                    rsvpModal.show();
+                    window.removeEventListener('scroll', arguments.callee); // Remove the event listener after showing the modal
+                }
             }
         });
 
