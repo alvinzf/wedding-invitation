@@ -14,6 +14,7 @@ class GuestAttendanceController extends Controller
         $guest = Guest::where('code', $request->input('code'))->first();
         if ($guest) {
             $guest->rsvp = true;
+            $guest->rsvp_number = $request->input('number');
             $guest->save();
             return response()->json(['status' => true, 'guest' => $guest]);
         } else {

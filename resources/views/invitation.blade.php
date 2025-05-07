@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Italiana&family=Open+Sans&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -429,7 +431,7 @@
                                                                         @foreach ($wedding as $item)
                                                                             <h1>{{ $item->name }}</h1>
                                                                         @endforeach
-                                                                        <p>{{ date("d M Y H:II", strtotime($invited->date)) }}</p>
+                                                                        <p>{{ date("d F Y H:i", strtotime($invited->date)) }}</p>
                                                                         <div class="important">
                                                                             <p><strong>Penting</strong></p>
                                                                             <p>Silakan sebutkan kode atau tunjukkan QRCode berikut kepada penerima tamu yang bertugas saat acara berlangsung.</p>
@@ -441,14 +443,14 @@
 
                                                                         <div class="qr-section">
                                                                             <div id="qrcode"></div>
-                                                                            <h2>{{$code}}</h2>
+                                                                            <h4>{{$code}}</h4>
                                                                         </div>
 
                                                                         <div class="ss-copyright">
                                                                             @foreach ($wedding as $item)
-                                                                                <span>© Copyright {{ $item->name }} {{date("Y")}}</span>
+                                                                                <span style="font-size: 10px;" >© Copyright {{ $item->name }} {{date("Y")}}</span>
                                                                             @endforeach
-                                                                            <span>Developed by <a href="https://github.com/alvinzf" target="_blank">alvinzf</a></span>
+                                                                            <span style="font-size: 10px;">Developed by <a href="https://github.com/alvinzf" target="_blank">alvinzf</a></span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="card" id="card">
