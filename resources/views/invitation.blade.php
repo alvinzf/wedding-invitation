@@ -384,7 +384,7 @@
                                                                                     <div>Halim, Jakarta Timur</div>
                                                                                 </div>
                                                                                                                                                                     <div class="widget-wrapper" data-anim="zoom-in">
-                                                                                        <a class="btn btn-custom mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event7032">Location</a>
+                                                                                        <a class="btn btn-custom mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event7032">Lokasi</a>
                                                                                     </div>
                                                                                                                                                             </div>
                                                                         </div>
@@ -707,10 +707,10 @@
                                             <div></div>
                                         </div>
                                     </div>
-                                    <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas" data-src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Griya%20Ardhya%20Garini&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas" data-src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Griya%20Ardhya%20Garini,Jl.%20Rajawali%20Raya&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                 </div>
                                 <a class="btn btn-custom color__button__trans color-secondary mt-3" href="https://www.google.com/maps/search/?api=1&query=Griya%20Ardhya%20Garini" target="_blank">
-                                                                            Location
+                                                                            Lokasi
                                                                     </a>
                             </div>
                         </div>
