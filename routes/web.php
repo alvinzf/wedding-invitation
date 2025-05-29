@@ -21,3 +21,6 @@ Route::post('/attendance/submit', [GuestAttendanceController::class, 'submit'])-
 Route::post('/guest-confirmation', [GuestAttendanceController::class, 'guestConfirmation'])->name('guest-confirmation');
 Route::get('/guest-wishes', [GuestAttendanceController::class, 'guestWishes'])->name('guest-wishes');
 Route::post('/guest-send-wish', [GuestAttendanceController::class, 'sendWish'])->name('send-wish');
+Route::get('/checked-in-guests', [GuestAttendanceController::class, 'checkedInGuests'])->name('checked-in-guests');
+//landing page
+Route::get('/landing-page', [GuestAttendanceController::class, 'landingPage'])->name('landing-page');

@@ -10,6 +10,21 @@ class GuestAttendanceController extends Controller
     public function index(Request $request){
         return view('guest-attendance');
     }
+
+    public function checkedInGuests(Request $request){
+        //get all guests who have checked in
+        $guests = Guest::where('attendance', '!=', null)
+                  ->orderBy('attendance', 'asc')
+                  ->take(10)
+                  ->get();
+        return response()->json(['guests' => $guests]);
+    }
+
+    public function landingPage(){
+        //get all guests who have checked in
+        return view('landing-page');
+    }
+
     public function guestConfirmation(Request $request){
         $guest = Guest::where('code', $request->input('code'))->first();
         if ($guest) {
@@ -89,7 +104,7 @@ class GuestAttendanceController extends Controller
      // Submit attendance
      public function submit(Request $request)
      {
-         $guest = Guest::find($request->input('id'));
+         $guest = Guest::where('code', $request->input('id'))->first();
          $guest->attendance = $request->input('attendance');
          $guest->actual_quota = $request->input('actual_quota');
          $guest->note = $request->input('note');

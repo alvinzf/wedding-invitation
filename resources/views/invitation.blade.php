@@ -128,7 +128,7 @@
                                     <div class="col-md-7 col-12 position-relative">
                                         <div class="orn-1">
                                             <div data-anim="slide-left" data-anim-delay="2000">
-                                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="1000">
+                                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="1000">
                                             </div>
                                         </div>
                                         <div class="image-wrapper shadow">
@@ -157,7 +157,7 @@
                         <div class="row justify-content-evenly">
                             <div class="col-lg-8 col-md-10 text-center mb-5 position-relative">
                                 <div class="orn-1">
-                                    <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                    <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
                                 </div>
                                 <div class="couple-content">
                                     <div class="title-section " data-anim="fade-down">
@@ -268,7 +268,7 @@
                     <div class="container position-relative">
                         <div class="orn-1">
                             <div data-anim="zoom-in-up">
-                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
                             </div>
                         </div>
                         <div class="row align-items-center justify-content-center flex-lg-row-reverse flex-column">
@@ -309,7 +309,7 @@
                                     <div class="venue-wrapper">
                                         <div class="col-md-8 col-xl-6 position-relative mx-auto" data-anim="slide-up">
                                             {{-- <div class="orn-1">
-                                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
                                             </div> --}}
                                             {{-- <div class="venue-description shadow">
                                                 <div class=" title-section" data-anim="fade-down">
@@ -410,7 +410,7 @@
                                     </div>
                                     <div class="container position-relative">
                                         <div class="orn-1">
-                                            <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
                                         </div>
                                         <div class="rsvp-wrapper">
                                             <div class="background-full" data-anim="width-right"></div>
@@ -525,7 +525,7 @@
                                 <div class="col-md-8 col-lg-6">
                                     <div class="wishes-preview">
                                         <div class="orn-1">
-                                            <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
+                                            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
                                         </div>
                                         <div class="card">
                                             <div class="card-body text-left">
@@ -556,7 +556,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-md-10 text-center position-relative">
                                 <div class="orn-1">
-                                    <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
                                 </div>
                                 <div class="appology-wrap">
                                     <div class="title-section">
@@ -583,7 +583,7 @@
                     <div class="container position-relative">
                         <div class="orn-1">
                             <div data-anim="slide-up" data-anim-delay="500">
-                                <img src="{{ asset('assets/undangan/images/flower.png') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
                             </div>
                         </div>
                         <div class="thank-wrapper">
