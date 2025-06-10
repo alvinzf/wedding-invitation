@@ -109,6 +109,7 @@
 <script>
   let qrScanner;
   let cameraList = [];
+  let scannerRunning = false;
 
   $(document).ready(function () {
     loadTable();
@@ -136,7 +137,10 @@
       restartQRScanner($(this).val());
     });
     $('#qrModal').on('hidden.bs.modal', function () {
-      if (qrScanner) qrScanner.stop().then(() => qrScanner.clear()).catch(console.error);
+      if (qrScanner && scannerRunning) {
+        qrScanner.stop().then(() => qrScanner.clear()).catch(console.warn);
+        scannerRunning = false;
+      }
     });
   });
 
@@ -161,13 +165,15 @@
   }
 
   function restartQRScanner(cameraId) {
-    if (qrScanner) {
+    if (qrScanner && scannerRunning) {
       qrScanner.stop().then(() => {
+        qrScanner.clear(); // no .then()
         startQRScanner(cameraId);
-      }).catch(() => {
+        }).catch(() => {
         qrScanner.clear();
         startQRScanner(cameraId);
-      });
+    });
+
     } else {
       startQRScanner(cameraId);
     }
@@ -181,10 +187,14 @@
       (decodedText) => {
         $('#search').val(decodedText);
         $('#qrModal').modal('hide');
-        qrScanner.stop().then(() => qrScanner.clear()).then(loadTable);
+        if (qrScanner && scannerRunning) {
+          qrScanner.stop().then(() => qrScanner.clear()).then(loadTable);
+        }
+        scannerRunning = false;
       },
       err => console.warn(err)
-    ).catch(err => console.error("QR scanner error", err));
+    ).then(() => scannerRunning = true)
+     .catch(err => console.error("QR scanner error", err));
   }
 
   function loadTable() {
@@ -229,7 +239,11 @@
     }, function () {
       $('#detailModal').modal('hide');
       loadTable();
-      alert('Attendance updated!');
+      //clear search filter-attendance
+        $('#search').val('');
+     //recall search
+        $('#search').trigger('keyup');
+
     });
   }
 </script>
