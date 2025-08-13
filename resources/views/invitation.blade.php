@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Italiana&family=Open+Sans&display=swap"
         rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="{{ asset('assets/undangan/images/icon.jpg') }}">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
@@ -94,6 +95,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="orn-1">
+                        <!-- Bottom Left Flower -->
+                        <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="flower"
+                            class="img-fluid animate-loop"
+                            data-anim="rotate-right"
+                            style="position:fixed; right:0; bottom:0; width:200px; z-index:1000; transform: scaleY(-1) rotate(180deg); pointer-events:none; margin-right:-50px; margin-bottom:-100px;">
+                        <!-- Bottom Right Flower -->
+                        <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="flower"
+                            class="img-fluid animate-loop"
+                            data-anim="rotate-left"
+                            style="position:fixed; left:0; bottom:0; width:200px; z-index:1000; transform: scaleY(-1) rotate(180deg); pointer-events:none; margin-left:-50px; margin-bottom:-100px;">
+                    </div>
+                    <!-- Bottom Left Corner -->
+                            {{-- <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
+                            <!-- Bottom Right Corner -->
+                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);"> --}}
                 </div>
             </div>
         </section>
@@ -325,10 +344,18 @@
             <!-- Story section -->
             <section class="story-section moveable-section" data-id="2">
                 <div class="container position-relative">
-                    <div class="orn-1">
+                    <div class="orn-1 d-flex justify-content-center gap-4">
                         <div data-anim="zoom-in-up">
                             <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose"
-                                class="img-fluid animate-loop" data-anim="rotate-right">
+                                class="img-fluid animate-loop"
+                                data-anim="rotate-right"
+                                style="width: 180px; max-width: none; min-width: 120px;">
+                        </div>
+                        <div data-anim="zoom-in-up">
+                            <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose"
+                                class="img-fluid animate-loop"
+                                data-anim="rotate-left"
+                                style="width: 180px; max-width: none; min-width: 120px;">
                         </div>
                     </div>
                     <div class="row align-items-center justify-content-center flex-lg-row-reverse flex-column">
@@ -641,9 +668,8 @@
                                                             <span style="font-size: 10px;">© Copyright
                                                                 {{ $item->name }} {{ date('Y') }}</span>
                                                         @endforeach
-                                                        <span style="font-size: 10px;">Developed by <a
-                                                                href="https://github.com/alvinzf"
-                                                                target="_blank">alvinzf</a></span>
+                                                        <span style="font-size: 10px;">Developed by Thara & Alvin
+                                                                </span>
                                                     </div>
                                                 </div>
                                                 <div class="card" id="card">
