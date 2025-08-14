@@ -283,7 +283,7 @@
                                         </div>
 
                                         <div class="couple-parent-name">
-                                            <p class="notranslate">Bapak Tukirin (Alm.)& Ibu Susiana Harijanti</p>
+                                            <p class="notranslate">Bapak Tukirin (Alm.) & Ibu Susiana Harijanti</p>
                                         </div>
                                     </div>
                                     <div class="sosmed-wrap mt-3">
@@ -1517,7 +1517,7 @@
 
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'viding'
+                pageLanguage: 'id'
             }, 'google_translate_element');
         }
 
