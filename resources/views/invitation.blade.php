@@ -42,7 +42,7 @@
         <!-- Loader -->
         <div class="loader-wrapper">
             <img src="{{ asset('assets/undangan/images/loading.gif') }}" alt="loading" class="spinner">
-            <span>Loading</span>
+            <span>Thara & Alvin is wrapping things up...</span>
         </div>
         <script>
             document.onreadystatechange = () => {
@@ -493,7 +493,10 @@
                                                                 <div class="event-name" data-anim="zoom-in">
                                                                     <h4 style="font-family: ; font-size: px;">Akad
                                                                     </h4>
-                                                                    <div>Hanya dihadiri oleh keluarga</div>
+                                                                    <div class="date">
+                                                                        <h6 style="font-size: 1.25rem; font-weight: bold;">Sabtu, 27 September 2025</h6>
+                                                                    </div>
+                                                                    <div>Hanya dihadiri oleh keluarga  </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -578,11 +581,8 @@
                                                                 <div class="event-name" data-anim="zoom-in">
                                                                     <h4 style="font-family: ; font-size: px;">Resepsi
                                                                     </h4>
-                                                                    <p>Sabtu</p>
                                                                     <div class="date">
-                                                                        <h3>27</h3>
-                                                                        <div></div>
-                                                                        <h5>September <br>2025</h5>
+                                                                        <h6 style="font-size: 1.25rem; font-weight: bold;">Sabtu, 27 September 2025</h6>
                                                                     </div>
                                                                     <p>11:00 - 13:00 </p>
                                                                 </div>
@@ -893,7 +893,7 @@
 
     <audio id="audio_file" class="d-none">
         <!-- <source src="horse.ogg" type="audio/ogg"> -->
-        <source src="{{ asset('assets/undangan/music/Take My Hand.mp3') }}" type="audio/mp3">
+        <source src="{{ asset('assets/undangan/music/ost.mp3') }}" type="audio/mp3">
         type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
