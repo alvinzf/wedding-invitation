@@ -279,11 +279,11 @@
                                     <h3 class="bride_style notranslate">Alvin Zulham Firdananta</h3>
                                     <div class="couple-parent">
                                         <div class="couple-parent-description">
-                                            <p>Putra keempat dari</p>
+                                            <p>Putra ke-4 dari</p>
                                         </div>
 
                                         <div class="couple-parent-name">
-                                            <p class="notranslate">Bapak (Alm) Tukirin & Ibu Susiana Harijanti</p>
+                                            <p class="notranslate">Bapak Tukirin (Alm.)& Ibu Susiana Harijanti</p>
                                         </div>
                                     </div>
                                     <div class="sosmed-wrap mt-3">
@@ -374,12 +374,12 @@
                                             <h2 class="text-center">Our Story</h2>
                                         </div>
                                         <p><em>Takdir mempertemukan kami sebagai rekan kerja di perusahaan yang sama,
-                                            berada di divisi yang serupa namun bertugas di lokasi yang berbeda.
+                                            berada di divisi yang sama namun bertugas di lokasi yang berbeda.
                                             Meski awalnya hanya sebatas komunikasi pekerjaan, interaksi yang terus terjalin
                                             perlahan membuka ruang untuk saling mengenal lebih dalam. Seiring berjalannya waktu,
                                             dari sekadar kolega, tumbuh rasa saling menghargai, memahami, dan akhirnya menyayangi.
-                                            Hingga pada tanggal 8 Oktober, kami memutuskan untuk memulai hubungan ini secara resmi
-                                            sebuah langkah awal dari perjalanan panjang yang penuh harapan, kebersamaan, dan cinta.
+                                            Hingga pada tanggal 8 Oktober, kami memutuskan untuk memulai hubungan ini secara resmi.
+                                            Sebuah langkah awal dari perjalanan panjang yang penuh harapan, kebersamaan, dan cinta.
                                             Kini, dengan penuh syukur dan keyakinan, kami melangkah menuju babak baru kehidupan.. </em></p>
                                     </div>
                                 </div>
@@ -493,7 +493,7 @@
                                                                 <div class="event-name" data-anim="zoom-in">
                                                                     <h4 style="font-family: ; font-size: px;">Akad
                                                                     </h4>
-                                                                    <div>Hanya dihadiri oleh keluarga dan kerabat dekat</div>
+                                                                    <div>Hanya dihadiri oleh keluarga</div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -580,17 +580,17 @@
                                                                     </h4>
                                                                     <p>Sabtu</p>
                                                                     <div class="date">
-                                                                        <h5>27</h5>
+                                                                        <h3>27</h3>
                                                                         <div></div>
-                                                                        <p>September <br>2025</p>
+                                                                        <h5>September <br>2025</h5>
                                                                     </div>
                                                                     <p>11:00 - 13:00 </p>
                                                                 </div>
                                                                 <div class="event-place notranslate"
                                                                     data-anim="zoom-in">
                                                                     <h4 style="font-family: ; font-size: px;">Griya
-                                                                        Ardhiya Garini</h4>
-                                                                    <div>Halim, Jakarta Timur</div>
+                                                                        Ardhya Garini</h4>
+                                                                    <div>Jl. Rajawali Raya, RT.5/RW.11, Halim Perdanakusuma, Kec. Makasar, Kota Jakarta Timur</div>
                                                                 </div>
                                                                 <div class="widget-wrapper" data-anim="zoom-in">
                                                                     <a class="btn btn-custom mt-3"
@@ -810,7 +810,6 @@
                                         <p>Tanpa mengurangi rasa hormat, Izinkan kami mengharapkan kehadiran
                                             Bapak/lbu/Saudara/Saudari melalui undangan digital ini, serta dapat memberikan doa
                                             restu kepada kami.</p>
-                                        <p>Terima kasih.</p>
                                     </div>
                                 </div>
                             </div>
@@ -844,9 +843,9 @@
                                         <h2 class="mb-3">Thank You</h2>
                                     </div>
                                     <div>
-                                        <p>Kami mengucapkan terimakasih kepada Bapak/Ibu/Saudara yang telah menghadiri
+                                        <p>Kami mengucapkan terimakasih kepada Bapak/Ibu/Saudara/Saudari yang telah menghadiri
                                             seluruh rangkaian acara pernikahan kami. Semoga waktu yang diberikan oleh
-                                            Bapak/Ibu/Saudara sekalian menjadi berkah dan manfaat yang kelak dibalas
+                                            Bapak/Ibu/Saudara/Saudari sekalian menjadi berkah dan manfaat yang kelak dibalas
                                             oleh Tuhan Yang Maha Esa. Terima kasih atas seluruh ucapan yang diberikan.
                                             Semoga kami menjadi pasangan yang berbahagia dunia dan akhirat :)</p>
                                     </div>
