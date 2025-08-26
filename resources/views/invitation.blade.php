@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Thara & Alvin - 27 September 2025">
     <meta name="description" content="Thara & Alvin - 27 September 2025">
+    <title>#eTHerALpromise - Thara & Alvin - 27 September 2025</title>
 
 
     {{-- <link rel="stylesheet" href="{{ asset('assets/invitation/theme/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db')}}">    <!-- Preconnect --> --}}
@@ -82,7 +83,7 @@
                             <div class="cover-body">
                                 <div class="background-full" data-anim="height-down" data-anim-delay="500"></div>
                                 <div class="cover-description" data-anim="zoom-in" data-anim-delay="1500">
-                                    <div class="text-center w-100">Yth. {{ $to }}</div>
+                                    <div class="text-center w-100"><strong>Yth. {{ $to }}</strong></div>
                                     <p>Kami mengundang anda dalam Acara Pernikahan</p>
                                     <h1 class="title cover_style">Thara & Alvin</h1>
                                     <p>Sabtu, 27 September 2025</p>
@@ -279,7 +280,7 @@
                                     <h3 class="bride_style notranslate">Alvin Zulham Firdananta</h3>
                                     <div class="couple-parent">
                                         <div class="couple-parent-description">
-                                            <p>Putra ke-4 dari</p>
+                                            <p>Putra keempat dari</p>
                                         </div>
 
                                         <div class="couple-parent-name">
@@ -378,8 +379,8 @@
                                             Meski awalnya hanya sebatas komunikasi pekerjaan, interaksi yang terus terjalin
                                             perlahan membuka ruang untuk saling mengenal lebih dalam. Seiring berjalannya waktu,
                                             dari sekadar kolega, tumbuh rasa saling menghargai, memahami, dan akhirnya menyayangi.
-                                            Hingga pada tanggal 8 Oktober, kami memutuskan untuk memulai hubungan ini secara resmi.
-                                            Sebuah langkah awal dari perjalanan panjang yang penuh harapan, kebersamaan, dan cinta.
+                                            Hingga pada tanggal 8 Oktober, kami memutuskan untuk memulai hubungan ini yang merupakan
+                                            langkah awal dari perjalanan panjang yang penuh harapan, kebersamaan, dan cinta.
                                             Kini, dengan penuh syukur dan keyakinan, kami melangkah menuju babak baru kehidupan.. </em></p>
                                     </div>
                                 </div>
@@ -418,6 +419,7 @@
                                                     </div>
                                                                                             </div> --}}
                                 </div>
+
                                 <div class="col-md-12 m-auto">
                                     <div class="venue-content">
                                         <div class="row justify-content-center row-venue-sm">
@@ -491,105 +493,26 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="event-name" data-anim="zoom-in">
-                                                                    <h4 style="font-family: ; font-size: px;">Akad
-                                                                    </h4>
                                                                     <div class="date">
-                                                                        <h6 style="font-size: 1.25rem; font-weight: bold;">Sabtu, 27 September 2025</h6>
+                                                                        <hr>
+                                                                        <h1 style="font-size: 1.5rem; font-weight: bold;">Sabtu, 27 September 2025</h1>
+                                                                        <hr>
                                                                     </div>
-                                                                    <div>Hanya dihadiri oleh keluarga  </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 m-auto">
-                                    <div class="venue-content">
-                                        <div class="row justify-content-center row-venue-sm">
-                                            <div class=" col-md-6 col-xl-5  position-relative my-0 my-md-4">
-
-                                            </div>
-                                            <div class=" row justify-content-center">
-                                                <div class="card">
-                                                    <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;top:0px;left:0px;width:40px;height:40px;z-index:2;transform: rotate(180deg);">
-                                            <!-- Top Right Corner -->
-                                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) rotate(180deg);">
-                                            <!-- Bottom Left Corner -->
-                                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
-                                            <!-- Bottom Right Corner -->
-                                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);">
-                                                    <div class="background-full" data-anim="height-down"></div>
-                                                    <div class="card-body">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-md-12">
-                                                                <div class="ribbon-venue shadow"
-                                                                    data-animationloop="keyframe">
-                                                                    <div data-anim="zoom-in">
-                                                                        <svg version="1.1"
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                            x="0px" y="0px" viewBox="0 0 560 560"
-                                                                            style="enable-background:new 0 0 560 560;overflow: visible;"
-                                                                            xml:space="preserve">
-                                                                            <style type="text/css">
-                                                                                .st0 {
-                                                                                    fill: var(--color-secondary);
-                                                                                }
-
-                                                                                .st1 {
-                                                                                    fill: none;
-                                                                                    stroke: var(--color-secondary);
-                                                                                    stroke-width: 19;
-                                                                                    stroke-linecap: round;
-                                                                                    stroke-miterlimit: 10;
-                                                                                    transform-origin: 50% 75%;
-                                                                                }
-                                                                            </style>
-                                                                            <g id="Layer_1">
-                                                                            </g>
-                                                                            <g id="Layer_3">
-                                                                                <g>
-                                                                                    <g>
-                                                                                        <path class="st0"
-                                                                                            d="M273.3,48.3c34.1,0,66.1,13.3,90.3,37.4c24.1,24.1,37.4,56.2,37.4,90.3c0,93.4-63.7,165.3-105.8,212.8c-4.4,4.9-8.5,9.6-12.3,14c-2.9,3.4-6.3,5.2-9.5,5.2c-4.1,0-7.4-2.8-9.4-5.2c-4.6-5.3-9.4-10.7-14.5-16.5c-20.4-23-43.5-49.1-63-80c-22.1-35-34.9-69.1-39.2-104.3c-4.8-39.7,6.8-79.6,31.9-109.4c22.5-26.7,53.5-42.4,87.3-44.2C268.7,48.4,271.1,48.3,273.3,48.3 M273.3,29.3c-2.6,0-5.2,0.1-7.8,0.2c-87.5,4.6-147.7,87.9-137.1,174.9c11.7,96.3,80.1,163.3,121.1,210.8c6.8,7.8,15.3,11.8,23.8,11.8c8.6,0,17.1-3.9,23.9-11.8C338.4,367.6,420,286.7,420,176C420,95,354.3,29.3,273.3,29.3L273.3,29.3z" />
-                                                                                    </g>
-                                                                                    <g>
-                                                                                        <path class="st0"
-                                                                                            d="M275.1,118c30.6,0,55.5,24.9,55.5,55.5S305.7,229,275.1,229s-55.5-24.9-55.5-55.5S244.5,118,275.1,118 M275.1,99c-41.1,0-74.5,33.3-74.5,74.5S234,248,275.1,248s74.5-33.3,74.5-74.5S316.2,99,275.1,99L275.1,99z" />
-                                                                                    </g>
-                                                                                </g>
-                                                                            </g>
-                                                                            <g id="Layer_2">
-                                                                                </image>
-                                                                                <ellipse class="st1" cx="272.8"
-                                                                                    cy="437.9" rx="146.4"
-                                                                                    ry="40.9" />
-                                                                                <ellipse class="st0 dot"
-                                                                                    cx="273.6" cy="437.9"
-                                                                                    rx="63.1" ry="17" />
-                                                                            </g>
-                                                                        </svg>
+                                                                    <div class="row justify-content-between">
+                                                                        <div class="col-6">
+                                                                            <h6 style="font-family: ; font-size: px; font-weight: bold;">Akad Nikah</h6>
+                                                                            <div> Hanya dihadiri keluarga </div>
+                                                                        </div>
+                                                                        <div class="col-6 ">
+                                                                            <h6 style="font-family: ; font-size: px; font-weight: bold;">Resepsi</h6>
+                                                                            <div> Pukul 11:00 - 13:00 WIB </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="event-name" data-anim="zoom-in">
-                                                                    <h4 style="font-family: ; font-size: px;">Resepsi
-                                                                    </h4>
-                                                                    <div class="date">
-                                                                        <h6 style="font-size: 1.25rem; font-weight: bold;">Sabtu, 27 September 2025</h6>
-                                                                    </div>
-                                                                    <p>11:00 - 13:00 </p>
-                                                                </div>
-                                                                <div class="event-place notranslate"
+                                                                <div class="event-place notranslate mt-3"
                                                                     data-anim="zoom-in">
-                                                                    <h4 style="font-family: ; font-size: px;">Griya
-                                                                        Ardhya Garini</h4>
+                                                                    <h1 >Griya
+                                                                        Ardhya Garini</h1>
                                                                     <div>Jl. Rajawali Raya, RT.5/RW.11, Halim Perdanakusuma, Kec. Makasar, Kota Jakarta Timur</div>
                                                                 </div>
                                                                 <div class="widget-wrapper" data-anim="zoom-in">
@@ -653,9 +576,12 @@
                                                             penerima tamu yang bertugas saat acara berlangsung.</p>
                                                     </div>
                                                     <div class="info">
-                                                        <h2>{{ $guest->name }}</h2>
-                                                        <p>Jumlah Tamu: <span
-                                                                id="guest_count">{{ $guest->rsvp_number }}</span></p>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="text-start">
+                                                                <h4>{{ $guest->name }}</h4>
+                                                                <p>Jumlah Tamu: <span id="guest_count">{{ $guest->rsvp_number }}</span></p>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
                                                     <div class="qr-section">
@@ -668,7 +594,7 @@
                                                             <span style="font-size: 10px;">© Copyright
                                                                 {{ $item->name }} {{ date('Y') }}</span>
                                                         @endforeach
-                                                        <span style="font-size: 10px;">Developed by Thara & Alvin
+                                                        <span style="font-size: 10px;">Developed by #eTHerALpromise Thara & Alvin
                                                                 </span>
                                                     </div>
                                                 </div>
@@ -883,7 +809,7 @@
                     font-weight: 600;
                 }
             </style>
-            <p class="footer-text">Copyright ©2025 Created with ❤️ by <nz href="#" target="_blank">Thara & Alvin</a>
+            <p class="footer-text">Copyright ©2025 Created with ❤️ by <nz href="#" target="_blank">#eTHerALpromise - Thara & Alvin</a>
             </p>
         </footer>
     </div>
