@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Thara & Alvin - 27 September 2025">
     <meta name="description" content="Thara & Alvin - 27 September 2025">
-    <title>#eTHerALpromise - Thara & Alvin - 27 September 2025</title>
+    <title>#eTHereALpromise - Thara & Alvin - 27 September 2025</title>
 
 
     {{-- <link rel="stylesheet" href="{{ asset('assets/invitation/theme/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db')}}">    <!-- Preconnect --> --}}
@@ -594,7 +594,7 @@
                                                             <span style="font-size: 10px;">© Copyright
                                                                 {{ $item->name }} {{ date('Y') }}</span>
                                                         @endforeach
-                                                        <span style="font-size: 10px;">Developed by #eTHerALpromise Thara & Alvin
+                                                        <span style="font-size: 10px;">Developed by #eTHereALpromise Thara & Alvin
                                                                 </span>
                                                     </div>
                                                 </div>
@@ -809,7 +809,7 @@
                     font-weight: 600;
                 }
             </style>
-            <p class="footer-text">Copyright ©2025 Created with ❤️ by <nz href="#" target="_blank">#eTHerALpromise - Thara & Alvin</a>
+            <p class="footer-text">Copyright ©2025 Created with ❤️ by <nz href="#" target="_blank">#eTHereALpromise - Thara & Alvin</a>
             </p>
         </footer>
     </div>
