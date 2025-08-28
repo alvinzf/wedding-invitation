@@ -9,7 +9,7 @@
   <style>
     .table { margin-top: 20px; }
     .attendance-btn { cursor: pointer; }
-    .navbar-custom { background-color: #ffcccb; }
+    .navbar-custom { background-color: #bdbdbd; }
   </style>
 </head>
 <body>
