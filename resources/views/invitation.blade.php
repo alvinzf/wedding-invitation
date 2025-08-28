@@ -10,7 +10,6 @@
     <title>#eTHereALove - Thara & Alvin - 27 September 2025</title>
 
 
-    {{-- <link rel="stylesheet" href="{{ asset('assets/invitation/theme/fonts/font.css?v=0e5bc0e164a62faa01633068973e7c1f8fc370db')}}">    <!-- Preconnect --> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -108,12 +107,7 @@
                             data-anim="rotate-left"
                             style="position:fixed; left:0; bottom:0; width:200px; z-index:1000; transform: scaleY(-1) rotate(180deg); pointer-events:none; margin-left:-50px; margin-bottom:-100px;">
                     </div>
-                    <!-- Bottom Left Corner -->
-                            {{-- <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
-                            <!-- Bottom Right Corner -->
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);"> --}}
+
                 </div>
             </div>
         </section>
@@ -405,19 +399,6 @@
                         <div class="container position-relative">
                             <div class="venue-wrapper">
                                 <div class="col-md-8 col-xl-6 position-relative mx-auto" data-anim="slide-up">
-                                    {{-- <div class="orn-1">
-                                                <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose" class="img-fluid animate-loop" data-anim="rotate-right">
-                                            </div> --}}
-                                    {{-- <div class="venue-description shadow">
-                                                <div class=" title-section" data-anim="fade-down">
-                                                    <h2>Lokasi</h2>
-                                                </div>
-                                                                                                    <div data-anim="zoom-in">
-                                                        <p>Dengan penuh rasa hormat kami mengharapkan kehadiran Bapak/Ibu/Saudara sekalian pada Acara Pernikahan kami yang akan kami laksanakan pada :</p>
-<h5><strong>Sabtu, 27 September 2025</strong></h5>
-<p>Besar harapan kami akan kehadiran Bapak/Ibu/Saudara sekalian tentunya dengan memperhatikan anjuran dari Pemerintah. Untuk itu kami memberlakukan protokol kesehatan sebagaimana instruksi dibawah ini</p>
-                                                    </div>
-                                                                                            </div> --}}
                                 </div>
 
                                 <div class="col-md-12 m-auto">
@@ -550,12 +531,7 @@
                         <div class="rsvp-wrapper">
                             <div class="background-full" data-anim="width-right"></div>
                             <div class="row justify-content-center">
-                                {{-- <div class="col-md-6">
-                                    <div class="image-wrapper">
-                                        <img src="{{ asset('assets/undangan/images/5.jpg') }}" alt="rsvp-background"
-                                            class="rsvp-background">
-                                    </div>
-                                </div> --}}
+
                                 <div class="col-md-6">
                                     <div class="rsvp-form" data-anim="fade-down">
                                         <div class="col-lg-10 mx-lg-auto col-12">
@@ -777,12 +753,6 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="col-md-7 p-0">
-                                <div class="image-wrapper">
-                                    <img src="{{ asset('assets/undangan/images/4.jpg') }}" alt="thank-background"
-                                        class="thank-background parallax">
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -818,7 +788,6 @@
 
 
     <audio id="audio_file" class="d-none">
-        <!-- <source src="horse.ogg" type="audio/ogg"> -->
         <source src="{{ asset('assets/undangan/music/ost.mp3') }}" type="audio/mp3">
         type="audio/mpeg">
         Your browser does not support the audio element.
@@ -1011,17 +980,7 @@
                 }
             });
         }
-        // $(function() {
-        //     $('rsvpdata').submit(function() {
-        //         $.ajax({
-        //             type: 'POST',
-        //             url: "{{ route('guest-confirmation') }}",
-        //             data: { code: $(this).code.value,
-        //                     jumlah: $(this).jumlah.value }
-        //         });
-        //         return false;
-        //     });
-        // })
+
     </script>
 
     <style>
@@ -1324,7 +1283,6 @@
         $(document).ready(function() {
             $.ajaxSetup({
                 headers: {
-                    // 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     "X-Requested-With": 'XMLHttpRequest'
                 }
             });
@@ -1466,16 +1424,6 @@
             $('.goog-te-banner-frame').contents().find('#\\:1\\.restore').click();
         }
 
-        /** Color Picker **/
-        // Remove Color Picker Initialization
-        // const defaultColors = {
-        //     main: "#f2edea",
-        //     primary: "rgba(255, 255, 255, 0.8)",
-        //     secondary: "#6a8369",
-        // };
-        // const cp = colorpicker(document.querySelector('.colorpicker__wrapper'), defaultColors, '');
-
-        /** End of Color Picker **/
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
@@ -1492,22 +1440,13 @@
         });
     </script>
     <script>
-        /* $(document).ready(function() {
-                    $("#toggleButton").click(function() {
-                        $("#hiddenElement").toggle(); // Toggle the visibility of the element
-                        $("#toggleButton").hide();
-                    });
-                }); */
-        // Get all elements with class toggleButton
+
         const toggleButtons = document.querySelectorAll('.toggleButton');
 
-        // Loop through each button and add a click event listener
         toggleButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Find the corresponding hiddenElement for this button
                 const hiddenElement = this.parentNode.nextElementSibling;
 
-                // Toggle the display of the hiddenElement
                 if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
                     hiddenElement.style.display = 'block';
                 } else {
@@ -1516,7 +1455,6 @@
             });
         });
     </script>
-    {{-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"933d49820d14294b","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.4.0-1-g37f21b1","token":"9788b2a8af4d4335bde0fab3174b2eed"}' crossorigin="anonymous"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script>
