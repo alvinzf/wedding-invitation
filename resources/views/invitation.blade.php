@@ -369,13 +369,14 @@
                                             <h2 class="text-center">Our Story</h2>
                                         </div>
                                         <p><em>Takdir mempertemukan kami sebagai rekan kerja di perusahaan yang sama,
-                                            berada di divisi yang sama namun bertugas di lokasi yang berbeda.
+                                            berada di divisi yang sama, namun bertugas di lokasi yang berbeda.
                                             Meski awalnya hanya sebatas komunikasi pekerjaan, interaksi yang terus terjalin
                                             perlahan membuka ruang untuk saling mengenal lebih dalam. Seiring berjalannya waktu,
-                                            dari sekadar kolega, tumbuh rasa saling menghargai, memahami, dan akhirnya menyayangi.
-                                            Hingga pada tanggal 8 Oktober, kami memutuskan untuk memulai hubungan ini yang merupakan
-                                            langkah awal dari perjalanan panjang yang penuh harapan, kebersamaan, dan cinta.
-                                            Kini, dengan penuh syukur dan keyakinan, kami melangkah menuju babak baru kehidupan.. </em></p>
+                                            hubungan kami yang awalnya sekadar rekan kerja berkembang menjadi rasa saling
+                                            menghargai, memahami, dan menyayangi. Hingga akhirnya, kami memutuskan
+                                            untuk memulai hubungan ini sebagai langkah awal menuju perjalanan panjang
+                                            penuh harapan, kebersamaan, dan cinta. Kini, dengan penuh syukur dan keyakinan,
+                                            kami melangkah menuju babak baru kehidupan. </em></p>
                                     </div>
                                 </div>
                             </div>
