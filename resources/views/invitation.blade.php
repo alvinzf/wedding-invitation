@@ -780,7 +780,7 @@
                     font-weight: 600;
                 }
             </style>
-            <p class="footer-text">Copyright ©2025 Created with ❤️ by <nz href="#" target="_blank">#eTHereALove - Thara & Alvin</a>
+            <p class="footer-text">Copyright ©2025 by <nz href="#" target="_blank">#eTHereALove - Thara & Alvin</a>
             </p>
         </footer>
     </div>
