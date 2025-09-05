@@ -567,12 +567,7 @@
                                                     </div>
 
                                                     <div class="ss-copyright">
-                                                        @foreach ($wedding as $item)
-                                                            <span style="font-size: 10px;">© Copyright
-                                                                {{ $item->name }} {{ date('Y') }}</span>
-                                                        @endforeach
-                                                        <span style="font-size: 10px;">Developed by #eTHereALove Thara & Alvin
-                                                                </span>
+                                                        <span class="footer-text" style="font-size: 10px;">Copyright ©2025 by <nz href="#" target="_blank">#eTHereALove - Thara & Alvin</a></span>
                                                     </div>
                                                 </div>
                                                 <div class="card" id="card">
