@@ -407,6 +407,10 @@ ul li {
   -webkit-animation: fade 2s linear infinite;
   animation: fade 2s linear infinite;
 }
+.protect-image {
+  pointer-events: none; /* disables right click & drag */
+  user-select: none;
+}
 
 @-webkit-keyframes fade {
   0% {

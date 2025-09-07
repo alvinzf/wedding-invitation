@@ -169,7 +169,7 @@
                                         </div>
                                         <div class="image-wrapper shadow">
                                             <img src="{{ asset('assets/undangan/images/7.jpg') }}"
-                                                alt="header-background" class="background-header parallax">
+                                                alt="header-background" class="background-header parallax protect-image">
                                         </div>
                                     </div>
                                 </div>
@@ -227,7 +227,7 @@
                                 <div class="background-full" data-anim="height-down" data-anim-delay="500"></div>
                                 <div class="image-wrap">
                                     <img src="{{ asset('assets/undangan/images/1.jpg') }}" alt="couple"
-                                        class="couple-image women">
+                                        class="couple-image women protect-image">
                                 </div>
                                 <div class="couple-description" data-anim="zoom-in">
                                     <h3 class="bride_style notranslate">Redina Thara Alifia</h3>
@@ -268,7 +268,7 @@
                                 <div class="background-full" data-anim="height-down" data-anim-delay="500"></div>
                                 <div class="image-wrap">
                                     <img src="{{ asset('assets/undangan/images/2.jpg') }}" alt="couple"
-                                        class="couple-image man">
+                                        class="couple-image man protect-image">
                                 </div>
                                 <div class="couple-description" data-anim="zoom-in">
                                     <h3 class="bride_style notranslate">Alvin Zulham Firdananta</h3>
@@ -362,7 +362,7 @@
                                 <div class="col-12 col-lg-6">
                                     <div class="image-story-wrap overflow-hidden" data-anim="slide-right">
                                         <img src="{{ asset('assets/undangan/images/8.jpg') }}" alt="story-background"
-                                            class="story-image parallax" width="100%" height="100%">
+                                            class="story-image parallax protect-image" width="100%" height="100%" >
                                     </div>
                                 </div>
                                 <div class="col-12  col-md-10 col-lg-6 ">
@@ -924,6 +924,26 @@
 
 
     <script>
+        $(function () {
+            $(".protect-image").each(function () {
+                let $img = $(this);
+
+                // Disable right click
+                $img.on("contextmenu", function (e) {
+                e.preventDefault();
+                return false;
+                });
+
+                // Disable drag
+                $img.on("dragstart", function (e) {
+                e.preventDefault();
+                });
+
+                // Extra: wrap with a div overlay so "save image" is harder
+                $img.wrap("<div class='img-wrapper' style='position:relative;display:inline-block;'></div>");
+                $img.after("<div class='overlay' style='position:absolute;top:0;left:0;width:100%;height:100%;'></div>");
+            });
+            });
         function submitRsvp() {
             //ajax request to guest-confirmation
             $.ajax({
