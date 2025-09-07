@@ -314,7 +314,7 @@
                                 </div>
 
                                 <a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=The+Wedding+of+Thara+%26+Alvin&amp;details=Visit+the+invitation+here+<a href='#'>#</a>&amp;dates=20250927T110000%2F20250927T130000&amp;ctz=Asia%2FJakarta"
-                                    target="_blank" class="btn btn-custom color-secondary btn-reminder">
+                                    target="_blank" class="btn btn-custom color-secondary btn-reminder" style="style="position: relative; z-index: 9999;"">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_2411_134)">
@@ -339,7 +339,9 @@
             <!-- Story section -->
             <section class="story-section moveable-section" data-id="2">
                 <div class="container position-relative">
-                    <div class="orn-1 d-flex justify-content-center gap-4">
+
+                    <div class="orn-1 d-flex justify-content-center gap-4"
+                        style="pointer-events: none;">
                         <div data-anim="zoom-in-up">
                             <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose"
                                 class="img-fluid animate-loop"
