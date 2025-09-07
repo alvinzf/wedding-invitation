@@ -406,7 +406,6 @@ ul li {
   font-weight: 700;
   -webkit-animation: fade 2s linear infinite;
   animation: fade 2s linear infinite;
-  letter-spacing: 5px;
 }
 
 @-webkit-keyframes fade {
