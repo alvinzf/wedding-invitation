@@ -6,21 +6,26 @@ use App\Filament\Resources\GuestResource;
 use App\Http\Controllers\GuestAttendanceController;
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 Route::post('/home', [HomeController::class, 'store']);
 Route::get('/admin/guests/{record}', function ($record) {
     return redirect()->route('filament.admin.resources.guests.view', $record);
 })->name('filament.admin.resources.guests.view');
-// Route::get('/attendance', [GuestAttendanceController::class, 'index'])->name('attendance');
-// Route::get('/attendance/table', [GuestAttendanceController::class, 'table'])->name('attendance.table');
-// Route::get('/attendance/detail', [GuestAttendanceController::class, 'detail'])->name('attendance.detail');
-// Route::post('/attendance/submit', [GuestAttendanceController::class, 'submit'])->name('attendance.submit');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/attendance', [GuestAttendanceController::class, 'index'])->name('attendance');
+    Route::get('/attendance/table', [GuestAttendanceController::class, 'table'])->name('attendance.table');
+    Route::get('/attendance/detail', [GuestAttendanceController::class, 'detail'])->name('attendance.detail');
+    Route::post('/attendance/submit', [GuestAttendanceController::class, 'submit'])->name('attendance.submit');
+});
 Route::post('/guest-confirmation', [GuestAttendanceController::class, 'guestConfirmation'])->name('guest-confirmation');
 Route::get('/guest-wishes', [GuestAttendanceController::class, 'guestWishes'])->name('guest-wishes');
 Route::post('/guest-send-wish', [GuestAttendanceController::class, 'sendWish'])->name('send-wish');
 Route::get('/checked-in-guests', [GuestAttendanceController::class, 'checkedInGuests'])->name('checked-in-guests');
 //landing page
 Route::get('/landing-page', [GuestAttendanceController::class, 'landingPage'])->name('landing-page');
+Route::any('/login', function () {
+    return redirect('/admin/login');
+})->name('login');
