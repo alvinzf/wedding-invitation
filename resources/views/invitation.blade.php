@@ -495,9 +495,11 @@
                                                                 </div>
                                                                 <div class="event-place notranslate mt-3"
                                                                     data-anim="zoom-in">
-                                                                    <h1 >Griya
-                                                                        Ardhya Garini</h1>
+                                                                    <h1>Griya Ardhya Garini</h1>
                                                                     <div>Jl. Rajawali Raya, RT.5/RW.11, Halim Perdanakusuma, Kec. Makasar, Kota Jakarta Timur</div>
+                                                                </div>
+                                                                <div class="alert alert-warning mt-3" style="background: #fffbe6; border-color: #ffe58f; color: #ad8b00; font-weight: 500;">
+                                                                    Dengan tidak mengurangi rasa hormat, mohon maaf kami tidak menerima karangan bunga
                                                                 </div>
                                                                 <div class="widget-wrapper" data-anim="zoom-in">
                                                                     <a class="btn btn-custom mt-3"
@@ -1076,7 +1078,7 @@
 
             $("#cardRSVP").hide();
             var rsvp_stat = {{ $guest->rsvp }};
-            if (rsvp_stat == 1) {
+            if (rsvp_stat == 0) {
                 $("#cardRSVP").show();
                 $("#formRSVP").hide();
             }
