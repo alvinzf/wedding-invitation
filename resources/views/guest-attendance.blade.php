@@ -233,21 +233,19 @@
                     qrbox: 250
                 },
                 qrCodeMessage => {
-                    console.log("Scanned:", qrCodeMessage);
-
-                    // Example: reload attendance table after scan
-                    $.ajax({
-                        url: '{{ route('attendance.table') }}',
-                        method: 'GET',
-                        data: {
-                            search: $('#search').val(),
-                            filter: $('#filter-attendance').val()
-                        },
-                        success: res => $('#guest-table tbody').html(res)
+                    $('#search').val(qrCodeMessage.slice(-4));
+                    loadTable(() => {
+                        if ($('#guest-table tbody tr').length === 1) {
+                            const guestId = $('#guest-table tbody tr').find('.attendance-btn').data('id');
+                            if (guestId) {
+                                loadDetailModal(guestId);
+                            }
+                        }
                     });
+                    $('#qrModal').modal('hide');
                 },
                 errorMessage => {
-                    console.warn("QR error:", errorMessage);
+                    // console.warn("QR error:", errorMessage);
                 }
             ).then(() => {
                 scannerRunning = true;
@@ -257,7 +255,7 @@
             });
         }
 
-        function loadTable() {
+        function loadTable(callback) {
             $.ajax({
                 url: '{{ route('attendance.table') }}',
                 method: 'GET',
@@ -265,7 +263,12 @@
                     search: $('#search').val(),
                     filter: $('#filter-attendance').val()
                 },
-                success: res => $('#guest-table tbody').html(res)
+                success: function (data) {
+                    $('#guest-table tbody').html(data);
+                    if (typeof callback === "function") {
+                        callback();
+                    }
+                }
             });
         }
 
@@ -301,9 +304,7 @@
             }, function() {
                 $('#detailModal').modal('hide');
                 loadTable();
-                //clear search filter-attendance
                 $('#search').val('');
-                //recall search
                 $('#search').trigger('keyup');
 
             });
