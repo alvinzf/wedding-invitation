@@ -77,8 +77,9 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="cover-content">
                             <div class="text-center" data-anim="height-up" data-anim-delay="500">
-                                    <img src="{{ asset('assets/undangan/images/joglo.png') }}" alt="joglo" style="max-width: 500px; width: 100%; height: auto;">
-                                </div>
+                                <img src="{{ asset('assets/undangan/images/joglo.png') }}" alt="joglo"
+                                    style="max-width: 500px; width: 100%; height: auto;">
+                            </div>
                             <div class="cover-body">
                                 <div class="background-full" data-anim="height-down" data-anim-delay="500"></div>
                                 <div class="cover-description" data-anim="zoom-in" data-anim-delay="1500">
@@ -94,17 +95,64 @@
                                 </button>
                             </div>
                         </div>
+
+                        @if (date('Y-m-d') === '2025-09-27')
+                            {{-- show rsvp-wrapper --}}
+                            <div class="">
+                                <div class="container position-relative">
+                                    <div class="">
+                                        <div class="background-full" data-anim="width-right"></div>
+                                        <div class="row justify-content-center">
+                                            <div class="rsvp-form" data-anim="fade-down">
+                                                <div class=" mx-lg-auto col-12">
+                                                    <div id="cardMain">
+                                                        <div class="card" id="card">
+                                                            <div class="important">
+                                                                <p>Silakan sebutkan kode atau tunjukkan QRCode berikut
+                                                                    kepada
+                                                                    penerima tamu yang bertugas saat acara berlangsung.
+                                                                </p>
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="d-flex justify-content-center">
+                                                                    <div class="text-start">
+                                                                        <h4>{{ $guest->name }}</h4>
+                                                                        <p>Jumlah Tamu: <span
+                                                                                id="guest_count">{{ $guest->rsvp_number }}</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="qr-section">
+                                                                <div id="qrcode"></div>
+                                                                <h4>{{ $code }}</h4>
+                                                            </div>
+
+                                                            <div class="ss-copyright">
+                                                                <span class="footer-text"
+                                                                    style="font-size: 10px;">Copyright ©2025 by <nz
+                                                                        href="#" target="_blank">#eTHereALove -
+                                                                        Thara & Alvin</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                     </div>
                     <div class="orn-1">
                         <!-- Bottom Left Flower -->
                         <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="flower"
-                            class="img-fluid animate-loop"
-                            data-anim="rotate-right"
+                            class="img-fluid animate-loop" data-anim="rotate-right"
                             style="position:fixed; right:0; bottom:0; width:200px; z-index:1000; transform: scaleY(-1) rotate(180deg); pointer-events:none; margin-right:-50px; margin-bottom:-100px;">
                         <!-- Bottom Right Flower -->
                         <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="flower"
-                            class="img-fluid animate-loop"
-                            data-anim="rotate-left"
+                            class="img-fluid animate-loop" data-anim="rotate-left"
                             style="position:fixed; left:0; bottom:0; width:200px; z-index:1000; transform: scaleY(-1) rotate(180deg); pointer-events:none; margin-left:-50px; margin-bottom:-100px;">
                     </div>
 
@@ -169,7 +217,8 @@
                                         </div>
                                         <div class="image-wrapper shadow">
                                             <img src="{{ asset('assets/undangan/images/7.jpg') }}"
-                                                alt="header-background" class="background-header parallax protect-image">
+                                                alt="header-background"
+                                                class="background-header parallax protect-image">
                                         </div>
                                     </div>
                                 </div>
@@ -203,7 +252,8 @@
                                     <h2>Assalamualaikum Warahmatullahi Wabarakatuh</h2>
                                 </div>
                                 <div data-anim="zoom-in">
-                                    <p>Dengan rahmat dan berkah Allah SWT, dengan penuh kebahagiaan kami mengundang Bapak/Ibu/Saudara/Saudari untuk menghadiri pernikahan kami</p>
+                                    <p>Dengan rahmat dan berkah Allah SWT, dengan penuh kebahagiaan kami mengundang
+                                        Bapak/Ibu/Saudara/Saudari untuk menghadiri pernikahan kami</p>
                                 </div>
                             </div>
                         </div>
@@ -212,17 +262,17 @@
                         <div class="col-md-6 col-xl-5 position-relative">
                             <!-- Top Left Corner -->
                             <div class="couple" data-anim="fade-down">
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;top:0px;left:0px;width:40px;height:40px;z-index:2;transform: rotate(180deg);">
-                            <!-- Top Right Corner -->
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) rotate(180deg);">
-                            <!-- Bottom Left Corner -->
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
-                            <!-- Bottom Right Corner -->
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);">
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;top:0px;left:0px;width:40px;height:40px;z-index:2;transform: rotate(180deg);">
+                                <!-- Top Right Corner -->
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) rotate(180deg);">
+                                <!-- Bottom Left Corner -->
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
+                                <!-- Bottom Right Corner -->
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);">
 
                                 <div class="background-full" data-anim="height-down" data-anim-delay="500"></div>
                                 <div class="image-wrap">
@@ -253,17 +303,17 @@
                         <div class="col-md-6 col-xl-5 position-relative">
                             <!-- Top Left Corner -->
                             <div class="couple" data-anim="fade-down">
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;top:0px;left:0px;width:40px;height:40px;z-index:2;transform: rotate(180deg);">
-                            <!-- Top Right Corner -->
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) rotate(180deg);">
-                            <!-- Bottom Left Corner -->
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
-                            <!-- Bottom Right Corner -->
-                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);">
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;top:0px;left:0px;width:40px;height:40px;z-index:2;transform: rotate(180deg);">
+                                <!-- Top Right Corner -->
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) rotate(180deg);">
+                                <!-- Bottom Left Corner -->
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
+                                <!-- Bottom Right Corner -->
+                                <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
+                                    style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);">
 
                                 <div class="background-full" data-anim="height-down" data-anim-delay="500"></div>
                                 <div class="image-wrap">
@@ -314,7 +364,8 @@
                                 </div>
 
                                 <a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=The+Wedding+of+Thara+%26+Alvin&amp;details=Visit+the+invitation+here+%23&amp;dates=20250927T110000%2F20250927T130000&amp;ctz=Asia%2FJakarta&amp;location=Griya+Ardhya+Garini%2C+Halim+Jakarta+Timur"
-                                    target="_blank" class="btn btn-custom color-secondary btn-reminder" style="style="position: relative; z-index: 9999;"">
+                                    target="_blank" class="btn btn-custom color-secondary btn-reminder"
+                                    style="style="position: relative; z-index: 9999;"">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_2411_134)">
@@ -340,18 +391,15 @@
             <section class="story-section moveable-section" data-id="2">
                 <div class="container position-relative">
 
-                    <div class="orn-1 d-flex justify-content-center gap-4"
-                        style="pointer-events: none;">
+                    <div class="orn-1 d-flex justify-content-center gap-4" style="pointer-events: none;">
                         <div data-anim="zoom-in-up">
                             <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose"
-                                class="img-fluid animate-loop"
-                                data-anim="rotate-right"
+                                class="img-fluid animate-loop" data-anim="rotate-right"
                                 style="width: 180px; max-width: none; min-width: 120px;">
                         </div>
                         <div data-anim="zoom-in-up">
                             <img src="{{ asset('assets/undangan/images/flower.webp') }}" alt="rose"
-                                class="img-fluid animate-loop"
-                                data-anim="rotate-left"
+                                class="img-fluid animate-loop" data-anim="rotate-left"
                                 style="width: 180px; max-width: none; min-width: 120px;">
                         </div>
                     </div>
@@ -362,7 +410,7 @@
                                 <div class="col-12 col-lg-6">
                                     <div class="image-story-wrap overflow-hidden" data-anim="slide-right">
                                         <img src="{{ asset('assets/undangan/images/8.jpg') }}" alt="story-background"
-                                            class="story-image parallax protect-image" width="100%" height="100%" >
+                                            class="story-image parallax protect-image" width="100%" height="100%">
                                     </div>
                                 </div>
                                 <div class="col-12  col-md-10 col-lg-6 ">
@@ -371,14 +419,19 @@
                                             <h2 class="text-center">Our Story</h2>
                                         </div>
                                         <p><em>Takdir mempertemukan kami sebagai rekan kerja di perusahaan yang sama,
-                                            berada di divisi yang sama, namun bertugas di lokasi yang berbeda.
-                                            Meski awalnya hanya sebatas komunikasi pekerjaan, interaksi yang terus terjalin
-                                            perlahan membuka ruang untuk saling mengenal lebih dalam. Seiring berjalannya waktu,
-                                            hubungan kami yang awalnya sekadar rekan kerja berkembang menjadi rasa saling
-                                            menghargai, memahami, dan menyayangi. Hingga akhirnya, kami memutuskan
-                                            untuk memulai hubungan ini sebagai langkah awal menuju perjalanan panjang
-                                            penuh harapan, kebersamaan, dan cinta. Kini, dengan penuh syukur dan keyakinan,
-                                            kami melangkah menuju babak baru kehidupan. </em></p>
+                                                berada di divisi yang sama, namun bertugas di lokasi yang berbeda.
+                                                Meski awalnya hanya sebatas komunikasi pekerjaan, interaksi yang terus
+                                                terjalin
+                                                perlahan membuka ruang untuk saling mengenal lebih dalam. Seiring
+                                                berjalannya waktu,
+                                                hubungan kami yang awalnya sekadar rekan kerja berkembang menjadi rasa
+                                                saling
+                                                menghargai, memahami, dan menyayangi. Hingga akhirnya, kami memutuskan
+                                                untuk memulai hubungan ini sebagai langkah awal menuju perjalanan
+                                                panjang
+                                                penuh harapan, kebersamaan, dan cinta. Kini, dengan penuh syukur dan
+                                                keyakinan,
+                                                kami melangkah menuju babak baru kehidupan. </em></p>
                                     </div>
                                 </div>
                             </div>
@@ -412,17 +465,21 @@
                                             </div>
                                             <div class=" row justify-content-center">
                                                 <div class="card">
-                                                    <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;top:0px;left:0px;width:40px;height:40px;z-index:2;transform: rotate(180deg);">
-                                            <!-- Top Right Corner -->
-                                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) rotate(180deg);">
-                                            <!-- Bottom Left Corner -->
-                                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
-                                            <!-- Bottom Right Corner -->
-                                            <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}" alt="corner-decor"
-                                                style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);">
+                                                    <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}"
+                                                        alt="corner-decor"
+                                                        style="position:absolute;top:0px;left:0px;width:40px;height:40px;z-index:2;transform: rotate(180deg);">
+                                                    <!-- Top Right Corner -->
+                                                    <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}"
+                                                        alt="corner-decor"
+                                                        style="position:absolute;top:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) rotate(180deg);">
+                                                    <!-- Bottom Left Corner -->
+                                                    <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}"
+                                                        alt="corner-decor"
+                                                        style="position:absolute;bottom:0px;left:0px;width:40px;height:40px;z-index:2;transform: scaleY(-1) rotate(180deg);">
+                                                    <!-- Bottom Right Corner -->
+                                                    <img src="{{ asset('assets/undangan/images/1x/Asset 2.png') }}"
+                                                        alt="corner-decor"
+                                                        style="position:absolute;bottom:0px;right:0px;width:40px;height:40px;z-index:2;transform: scaleX(-1) scaleY(-1) rotate(180deg);">
                                                     <div class="background-full" data-anim="height-down"></div>
                                                     <div class="card-body">
                                                         <div class="row justify-content-between">
@@ -479,16 +536,22 @@
                                                                 <div class="event-name" data-anim="zoom-in">
                                                                     <div class="date">
                                                                         <hr>
-                                                                        <h1 style="font-size: 1.5rem; font-weight: bold;">Sabtu, 27 September 2025</h1>
+                                                                        <h1
+                                                                            style="font-size: 1.5rem; font-weight: bold;">
+                                                                            Sabtu, 27 September 2025</h1>
                                                                         <hr>
                                                                     </div>
                                                                     <div class="row justify-content-between">
                                                                         <div class="col-6">
-                                                                            <h6 style="font-family: ; font-size: px; font-weight: bold;">Akad Nikah</h6>
+                                                                            <h6
+                                                                                style="font-family: ; font-size: px; font-weight: bold;">
+                                                                                Akad Nikah</h6>
                                                                             <div> Hanya dihadiri keluarga </div>
                                                                         </div>
                                                                         <div class="col-6 ">
-                                                                            <h6 style="font-family: ; font-size: px; font-weight: bold;">Resepsi</h6>
+                                                                            <h6
+                                                                                style="font-family: ; font-size: px; font-weight: bold;">
+                                                                                Resepsi</h6>
                                                                             <div> Pukul 11:00 - 13:00 WIB </div>
                                                                         </div>
                                                                     </div>
@@ -496,10 +559,14 @@
                                                                 <div class="event-place notranslate mt-3"
                                                                     data-anim="zoom-in">
                                                                     <h1>Griya Ardhya Garini</h1>
-                                                                    <div>Jl. Rajawali Raya, RT.5/RW.11, Halim Perdanakusuma, Kec. Makasar, Kota Jakarta Timur</div>
+                                                                    <div>Jl. Rajawali Raya, RT.5/RW.11, Halim
+                                                                        Perdanakusuma, Kec. Makasar, Kota Jakarta Timur
+                                                                    </div>
                                                                 </div>
-                                                                <div class="alert alert-warning mt-3" style="background: #fffbe6; border-color: #ffe58f; color: #ad8b00; font-weight: 500;">
-                                                                    Dengan tidak mengurangi rasa hormat, mohon maaf kami tidak menerima karangan bunga
+                                                                <div class="alert alert-warning mt-3"
+                                                                    style="background: #fffbe6; border-color: #ffe58f; color: #ad8b00; font-weight: 500;">
+                                                                    Dengan tidak mengurangi rasa hormat, mohon maaf kami
+                                                                    tidak menerima karangan bunga
                                                                 </div>
                                                                 <div class="widget-wrapper" data-anim="zoom-in">
                                                                     <a class="btn btn-custom mt-3"
@@ -542,7 +609,7 @@
                                         <div class="col-lg-10 mx-lg-auto col-12">
                                             <div id="cardRSVP" style="display: none">
                                                 <div class="card" id="card">
-                                                    <div class="title-section" >
+                                                    <div class="title-section">
                                                         <h3>
                                                             <p>RSVP CARD</p>
                                                         </h3>
@@ -560,7 +627,9 @@
                                                         <div class="d-flex justify-content-center">
                                                             <div class="text-start">
                                                                 <h4>{{ $guest->name }}</h4>
-                                                                <p>Jumlah Tamu: <span id="guest_count">{{ $guest->rsvp_number }}</span></p>
+                                                                <p>Jumlah Tamu: <span
+                                                                        id="guest_count">{{ $guest->rsvp_number }}</span>
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -571,7 +640,9 @@
                                                     </div>
 
                                                     <div class="ss-copyright">
-                                                        <span class="footer-text" style="font-size: 10px;">Copyright ©2025 by <nz href="#" target="_blank">#eTHereALove - Thara & Alvin</a></span>
+                                                        <span class="footer-text" style="font-size: 10px;">Copyright
+                                                            ©2025 by <nz href="#" target="_blank">#eTHereALove -
+                                                                Thara & Alvin</a></span>
                                                     </div>
                                                 </div>
                                                 <div class="card" id="card">
@@ -710,7 +781,8 @@
                                 <div class="col-md-10 m-auto col-10" data-anim="zoom-in">
                                     <div class="mb-0" data-anim="zoom-in">
                                         <p>Tanpa mengurangi rasa hormat, Izinkan kami mengharapkan kehadiran
-                                            Bapak/lbu/Saudara/Saudari melalui undangan digital ini, serta dapat memberikan doa
+                                            Bapak/lbu/Saudara/Saudari melalui undangan digital ini, serta dapat
+                                            memberikan doa
                                             restu kepada kami.</p>
                                     </div>
                                 </div>
@@ -745,9 +817,11 @@
                                         <h2 class="mb-3">Thank You</h2>
                                     </div>
                                     <div>
-                                        <p>Kami mengucapkan terimakasih kepada Bapak/Ibu/Saudara/Saudari yang telah menghadiri
+                                        <p>Kami mengucapkan terimakasih kepada Bapak/Ibu/Saudara/Saudari yang telah
+                                            menghadiri
                                             seluruh rangkaian acara pernikahan kami. Semoga waktu yang diberikan oleh
-                                            Bapak/Ibu/Saudara/Saudari sekalian menjadi berkah dan manfaat yang kelak dibalas
+                                            Bapak/Ibu/Saudara/Saudari sekalian menjadi berkah dan manfaat yang kelak
+                                            dibalas
                                             oleh Tuhan Yang Maha Esa. Terima kasih atas seluruh ucapan yang diberikan.
                                             Semoga kami menjadi pasangan yang berbahagia dunia dan akhirat :)</p>
                                     </div>
@@ -779,7 +853,8 @@
                     font-weight: 600;
                 }
             </style>
-            <p class="footer-text">Copyright ©2025 by <nz href="#" target="_blank">#eTHereALove - Thara & Alvin</a>
+            <p class="footer-text">Copyright ©2025 by <nz href="#" target="_blank">#eTHereALove - Thara &
+                    Alvin</a>
             </p>
         </footer>
     </div>
@@ -926,26 +1001,30 @@
 
 
     <script>
-        $(function () {
-            $(".protect-image").each(function () {
+        $(function() {
+            $(".protect-image").each(function() {
                 let $img = $(this);
 
                 // Disable right click
-                $img.on("contextmenu", function (e) {
-                e.preventDefault();
-                return false;
+                $img.on("contextmenu", function(e) {
+                    e.preventDefault();
+                    return false;
                 });
 
                 // Disable drag
-                $img.on("dragstart", function (e) {
-                e.preventDefault();
+                $img.on("dragstart", function(e) {
+                    e.preventDefault();
                 });
 
                 // Extra: wrap with a div overlay so "save image" is harder
-                $img.wrap("<div class='img-wrapper' style='position:relative;display:inline-block;'></div>");
-                $img.after("<div class='overlay' style='position:absolute;top:0;left:0;width:100%;height:100%;'></div>");
+                $img.wrap(
+                "<div class='img-wrapper' style='position:relative;display:inline-block;'></div>");
+                $img.after(
+                    "<div class='overlay' style='position:absolute;top:0;left:0;width:100%;height:100%;'></div>"
+                    );
             });
-            });
+        });
+
         function submitRsvp() {
             //ajax request to guest-confirmation
             $.ajax({
@@ -1000,7 +1079,6 @@
                 }
             });
         }
-
     </script>
 
     <style>
@@ -1068,17 +1146,17 @@
 
                 if (sectionPosition < screenPosition) {
                     var rsvp_stat = {{ $guest->rsvp }};
-                    if (rsvp_stat == 1) {
+                    if (rsvp_stat == 0) {
                         rsvpModal.show();
                         window.removeEventListener('scroll', arguments
-                        .callee); // Remove the event listener after showing the modal
+                            .callee); // Remove the event listener after showing the modal
                     }
                 }
             });
 
             $("#cardRSVP").hide();
             var rsvp_stat = {{ $guest->rsvp }};
-            if (rsvp_stat == 0) {
+            if (rsvp_stat == 1 || new Date().toISOString().slice(0, 10) === "2025-09-27") {
                 $("#cardRSVP").show();
                 $("#formRSVP").hide();
             }
@@ -1384,7 +1462,7 @@
                         } else {
                             $('.guestbook_form_wrapper').html(
                                 "<p class='text-center'>Terima Kasih, Anda telah memberikan komentar</p>"
-                                );
+                            );
                         }
 
                         $('#guestbook_submit_btn').prop('disabled', false);
@@ -1443,7 +1521,6 @@
         function reset_translation() {
             $('.goog-te-banner-frame').contents().find('#\\:1\\.restore').click();
         }
-
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
@@ -1460,7 +1537,6 @@
         });
     </script>
     <script>
-
         const toggleButtons = document.querySelectorAll('.toggleButton');
 
         toggleButtons.forEach(button => {
