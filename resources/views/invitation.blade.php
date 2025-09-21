@@ -1146,7 +1146,7 @@
 
                 if (sectionPosition < screenPosition) {
                     var rsvp_stat = {{ $guest->rsvp }};
-                    if (rsvp_stat == 0) {
+                    if (rsvp_stat == 0 && new Date().toISOString().slice(0, 10) !== "2025-09-27") {
                         rsvpModal.show();
                         window.removeEventListener('scroll', arguments
                             .callee); // Remove the event listener after showing the modal
