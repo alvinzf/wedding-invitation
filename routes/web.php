@@ -29,3 +29,7 @@ Route::get('/landing-page', [GuestAttendanceController::class, 'landingPage'])->
 Route::any('/login', function () {
     return redirect('/admin/login');
 })->name('login');
+
+//add guest
+Route::post('/add-guest', [GuestAttendanceController::class, 'addGuest'])->name('add-guest');
+

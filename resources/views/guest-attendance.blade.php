@@ -42,9 +42,17 @@
             <div class="mb-3 col-md-6">
                 <label for="search" class="form-label">Search</label>
                 <div class="input-group">
-                    <input type="text" id="search" class="form-control" placeholder="Search by name or code...">
-                    <button class="btn btn-outline-secondary" id="btnScanQR" type="button">
+                    <input type="text" id="search" class="form-control col-md-8" placeholder="Search by name or code...">
+                    <button class="btn btn-outline-secondary col-md-4" id="btnScanQR" type="button">
                         <i class="fas fa-qrcode"></i>
+                    </button>
+                </div>
+            </div>
+            {{-- button to show modal to add guest--}}
+            <div class="mb-3 col-md-3 text-end">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" id="btnAddGuest" type="button" data-bs-toggle="modal" data-bs-target="#addGuestModal">
+                        <i class="fas fa-user-plus"></i> Add Guest
                     </button>
                 </div>
             </div>
@@ -124,14 +132,95 @@
             </div>
         </div>
     </div>
+    {{-- modal add guest --}}
+    <div class="modal fade" id="addGuestModal" tabindex="-1">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Guest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addGuestForm">
+                        <div class="mb-3"><label class="form-label">Name</label><input type="text"
+                                class="form-control" id="add_name" name="add_name" ></div>
+                        <div class="mb-3">
+                            <label class="form-label">Group</label>
+                            <select class="form-control" id="add_group" name="add_group">
+                                <option value="">--Pilih Group--</option>
+                                <option value="FRIEND">FRIEND</option>
+                                <option value="NEIGHBOR">NEIGHBOR</option>
+                                <option value="MAIN FAMILY">MAIN FAMILY</option>
+                                <option value="BIG FAMILY">BIG FAMILY</option>
+                                <option value="OTHER FAMILY">OTHER FAMILY</option>
+                                <option value="OFFICE">OFFICE</option>
+                            </select>
+                        </div>
+                                {{-- relation --}}
+                                <div class="mb-3">
+                                    <label class="form-label">Relation</label>
+                                    <select class="form-control" id="add_relation" name="add_relation">
+                                        <option value="">--Pilih Relasi--</option>
+                                        <option value="CPW">CPW</option>
+                                        <option value="CPW-P">CPW-P</option>
+                                        <option value="CPP">CPP</option>
+                                        <option value="CPP-P">CPP-P</option>
+                                        <option value="BOTH">BOTH</option>
+                                    </select>
+                                </div>
+                         <div class="mb-3">
+                            <label class="form-label">Actual</label>
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary" type="button" id="decrease-actual"><i
+                                        class="fas fa-minus"></i></button>
+                                <input type="text" class="form-control text-center" id="add_actual" name="add_actual" value="0">
+                                <button class="btn btn-outline-secondary" type="button" id="increase-actual"><i
+                                        class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="mb-3"><label class="form-label">Note</label>
+                            <textarea class="form-control" id="add_note" name="add_note"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitAddGuest" >Add Guest</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- end modal add guest --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+
     <script>
         let qrScanner;
         let cameraList = [];
         let scannerRunning = false;
         let lastSelectedCameraId = null;
+
+        // ajax to submit add guest to laravel route add-guest
+        function addGuest() {
+            $.post('{{ route('add-guest') }}', {
+                _token: '{{ csrf_token() }}',
+                    add_name: $('#add_name').val(),
+                    add_group: $('#add_group').val(),
+                    add_relation: $('#add_relation').val(),
+                    add_actual: $('#add_actual').val(),
+                    add_note : $('#add_note').val(),
+            }, function() {
+                    $('#addGuestModal').modal('hide');
+                    loadTable();
+                    $('#search').val('');
+                    $('#add_name').val('');
+                    $('#add_group').val('');
+                    $('#add_actual').val('');
+                    $('#add_relation').val('');
+                    $('#add_note').val('');
+            });
+        }
 
         $(document).ready(function() {
             loadTable();
@@ -145,10 +234,22 @@
                 $(this).prop('disabled', true);
                 submitAttendance();
             });
+            // submitAddGuest onclick
+            $('#submitAddGuest').on('click', function() {
+                const actual = parseInt($('#add_actual').val());
+                if (isNaN(actual) || actual < 0) return alert('Actual quota must be non-negative number.');
+                $(this).prop('disabled', true);
+                addGuest();
+            });
             $('#increase-quota').click(() => $('#actual_quota').val(+$('#actual_quota').val() + 1));
             $('#decrease-quota').click(() => {
                 let val = +$('#actual_quota').val();
                 if (val > 0) $('#actual_quota').val(val - 1);
+            });
+            $('#increase-actual').click(() => $('#add_actual').val(+$('#add_actual').val() + 1));
+            $('#decrease-actual').click(() => {
+                let val = +$('#add_actual').val();
+                if (val > 0) $('#add_actual').val(val - 1);
             });
             $('#filter-attendance').change(loadTable);
             $('#btnScanQR').on('click', function() {
