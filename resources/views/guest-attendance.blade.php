@@ -203,7 +203,7 @@
 
         // ajax to submit add guest to laravel route add-guest
         function addGuest() {
-            $.post('{{ route('attendance.addGuest') }}', {
+            $.post('{{ route('attendance.add') }}', {
                 _token: '{{ csrf_token() }}',
                     add_name: $('#add_name').val(),
                     add_group: $('#add_group').val(),

@@ -113,7 +113,7 @@ class GuestAttendanceController extends Controller
          return response()->json(['success' => true]);
      }
      //add new guest
-        public function addGuest(Request $request)
+        public function add(Request $request)
         {
             $guest = new Guest();
             $guest->name = $request->input('add_name');
