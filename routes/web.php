@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AddGuestController;
 use Illuminate\Support\Facades\Route;
-use App\Filament\Resources\GuestResource;
 use App\Http\Controllers\GuestAttendanceController;
 Route::get('/', [HomeController::class, 'index']);
 
@@ -19,7 +19,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/attendance/table', [GuestAttendanceController::class, 'table'])->name('attendance.table');
     Route::get('/attendance/detail', [GuestAttendanceController::class, 'detail'])->name('attendance.detail');
     Route::post('/attendance/submit', [GuestAttendanceController::class, 'submit'])->name('attendance.submit');
-    Route::post('/attendance/add', [GuestAttendanceController::class, 'add'])->name('attendance.add');
+    Route::post('/add-guest', [AddGuestController::class, 'add'])->name('add-guest');
 });
 Route::post('/guest-confirmation', [GuestAttendanceController::class, 'guestConfirmation'])->name('guest-confirmation');
 Route::get('/guest-wishes', [GuestAttendanceController::class, 'guestWishes'])->name('guest-wishes');
