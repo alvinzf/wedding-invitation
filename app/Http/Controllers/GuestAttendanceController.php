@@ -102,24 +102,28 @@ class GuestAttendanceController extends Controller
      }
 
      // Submit attendance
-     public function submit(Request $request)
-     {
-         $guest = Guest::where('code', $request->input('id'))->first();
-         $guest->attendance = $request->input('attendance');
-         $guest->actual_quota = $request->input('actual_quota');
-         $guest->note = $request->input('note');
-         $guest->save();
+    public function submit(Request $request)
+    {
+        // If 'id' is present, update existing guest
+        if ($request->has('id')) {
+            $guest = Guest::where('code', $request->input('id'))->first();
+            if (!$guest) {
+                return response()->json(['success' => false, 'message' => 'Guest not found.']);
+            }
+            $guest->attendance = $request->input('attendance');
+            $guest->actual_quota = $request->input('actual_quota');
+            $guest->note = $request->input('note');
+            $guest->save();
 
-         return response()->json(['success' => true]);
-     }
-     //add new guest
-        public function add(Request $request)
-        {
+            return response()->json(['success' => true, 'code' => $guest->code]);
+        }
+        // Otherwise, add new guest
+        else {
             $guest = new Guest();
             $guest->name = $request->input('add_name');
             $guest->wedding_id = 1;
             $guest->group = $request->input('add_group') . " " . $request->input('add_relation');
-            $guest->quota = 0; //default quota is 0
+            $guest->quota = 0; // default quota is 0
             $guest->actual_quota = $request->input('add_actual');
             $guest->type = 'RESEPSI';
             $guest->rsvp = 0;
@@ -128,14 +132,14 @@ class GuestAttendanceController extends Controller
             $guest->note = $request->input('add_note');
             $guest->attendance = now();
 
-
-            //generate unique code
+            // generate unique code
             do {
-                $code = strtoupper(bin2hex(random_bytes(6))); //6 characters
+                $code = strtoupper(bin2hex(random_bytes(6))); // 6 characters
             } while (Guest::where('code', $code)->exists());
             $guest->code = $code;
             $guest->save();
 
             return response()->json(['success' => true, 'code' => $code]);
         }
+    }
 }
