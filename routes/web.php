@@ -19,7 +19,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/attendance/table', [GuestAttendanceController::class, 'table'])->name('attendance.table');
     Route::get('/attendance/detail', [GuestAttendanceController::class, 'detail'])->name('attendance.detail');
     Route::post('/attendance/submit', [GuestAttendanceController::class, 'submit'])->name('attendance.submit');
-    Route::post('/attendance/addGuest', [GuestAttendanceController::class, 'addGuest'])->name('attendance.addGuest');
+    Route::post('/attendance/addGuest', [GuestAttendanceController::class, 'submit'])->name('attendance.addGuest');
 });
 Route::post('/guest-confirmation', [GuestAttendanceController::class, 'guestConfirmation'])->name('guest-confirmation');
 Route::get('/guest-wishes', [GuestAttendanceController::class, 'guestWishes'])->name('guest-wishes');
