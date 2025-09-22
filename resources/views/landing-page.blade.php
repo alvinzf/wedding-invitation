@@ -71,6 +71,8 @@
             method: 'GET',
             success: function(response) {
                 let newGuests = [];
+                // reverse response.guests order
+                response.guests = Object.values(response.guests).reverse();
 
                 Object.values(response.guests).forEach(guest => {
                     if (guest.priority === 1) {

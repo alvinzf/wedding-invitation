@@ -14,7 +14,7 @@ class GuestAttendanceController extends Controller
     public function checkedInGuests(Request $request){
         //get all guests who have checked in
         $guests = Guest::where('attendance', '!=', null)
-                  ->orderBy('attendance', 'asc')
+                  ->orderBy('attendance', 'desc')
                   ->take(10)
                   ->get();
         return response()->json(['guests' => $guests]);

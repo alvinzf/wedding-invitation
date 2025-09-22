@@ -386,6 +386,12 @@
                 $('#note').val(res.note);
                 $('#detailModal').modal('show');
                 $('#submitAttendance').prop('disabled', false);
+                //if the res.priority is 1 change the detailModal background into gold
+                if(res.priority === 1){
+                    $('.modal-content').css('background-color', '#FFD700'); // light gold color
+                } else {
+                    $('.modal-content').css('background-color', ''); // reset to default
+                }
             });
         }
 
