@@ -90,7 +90,7 @@
 
                 // Limit to 10 entries
                 allGuestsCache = allGuestsCache.slice(0, 10);
-                vipGuestsCache = vipGuestsCache.slice(0, 10);
+                vipGuestsCache = vipGuestsCache.slice(0, 30);
 
                 // Add to queue if not already queued or shown
                 newGuests.forEach(guest => {
@@ -106,10 +106,14 @@
                     vipHtml += `
                         <div class="guest-item d-flex align-items-center justify-content-between ${rowClass}">
                             <div class="d-flex align-items-center">
-                                <div class="guest-name mb-0">${guest.name}</div>
+                                <div>
+                                    <div class="guest-name mb-0">${guest.name}</div>
+                                    <p>${guest.description}</p>
+                                </div>
                                 <span class="badge bg-secondary ms-2">${guest.actual_quota}</span>
                             </div>
                             <div class="guest-time text-end">${guest.attendance ? guest.attendance.split(' ')[1].slice(0,5) : ''}</div>
+
                         </div>
                     `;
                 });
