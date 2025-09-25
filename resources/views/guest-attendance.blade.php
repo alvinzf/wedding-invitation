@@ -219,6 +219,7 @@
                     $('#add_actual').val('');
                     $('#add_relation').val('');
                     $('#add_note').val('');
+
             });
         }
 
@@ -238,7 +239,6 @@
             $('#submitAddGuest').on('click', function() {
                 const actual = parseInt($('#add_actual').val());
                 if (isNaN(actual) || actual < 0) return alert('Actual quota must be non-negative number.');
-                $(this).prop('disabled', true);
                 addGuest();
             });
             $('#increase-quota').click(() => $('#actual_quota').val(+$('#actual_quota').val() + 1));
